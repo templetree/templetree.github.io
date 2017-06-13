@@ -5,6 +5,8 @@
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
 <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
 <!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
 <link rel="canonical" href="index.html">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -1342,12 +1344,95 @@ padding-bottom:20px;
 		margin-right:0%;
 	}
 }
+#clkbenifits{ }
+#clkpocketdownload{ }
+#clktwitter{ }
+#clkfacebook{ }
+#clkwhatsapp{ }
+
 </style>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 
 
 <body>
+	<!-- AMP Analytics -->
+	<amp-analytics type="googleanalytics">
+	<script type="application/json">
+	{
+		"vars": {
+			"account": "UA-100886656-1"
+		},
+		"triggers": {
+			"trackPageview": {
+				"on": "visible",
+				"request": "pageview"
+			},
+			"trackClickOnHeader" : {
+				"on": "click",
+				"selector": "#clkpocketdownload",
+				"request": "event",
+				"vars": {
+					"eventCategory": "Pocketpdf",
+					"eventAction": "header-procedure"
+				}
+			},
+			"trackClickOnBenifits" : {
+				"on": "click",
+				"selector": "#clkbenifits",
+				"request": "event",
+				"vars": {
+					"eventCategory": "Benifits",
+					"eventAction": "header-procedure"
+				}
+			},
+
+			"trackClickOnTwitter" : {
+				"on": "click",
+				"selector": "#clktwitter",
+				"request": "event",
+				"vars": {
+					"socialNetwork": "twitter",
+					"socialAction": "tweet",
+					"socialTarget": "Procedure"
+				}
+			},
+			"trackClickOnFacebook" : {
+				"on": "click",
+				"selector": "#clkfacebook",
+				"request": "event",
+				"vars": {
+					"socialNetwork": "Facebook",
+					"socialAction": "Share",
+					"socialTarget": "Procedure"
+				}
+			},
+			"trackClickOnWhatsapp" : {
+				"on": "click",
+				"selector": "#clkwhatsapp",
+				"request": "event",
+				"vars": {
+					"socialNetwork": "Whatsapp",
+					"socialAction": "Share",
+					"socialTarget": "Benifits"
+				}
+			},
+		"scrollPings": {
+		 "on": "scroll",
+		 "scrollSpec": {
+			 "verticalBoundaries": [25, 50, 90],
+			 "horizontalBoundaries": [90]
+		 },
+		 "request": "event",
+		 "vars": {
+			 "eventId": "scroll"
+		 }
+	 }
+		}
+	}
+	</script>
+	</amp-analytics>
+	<!--  AMP Analytics --->
 
 	<header>
 		<div class="header-logo">
@@ -1362,101 +1447,6 @@ padding-bottom:20px;
 	 </a>
 	 </header>
 	<div class="header-clear"></div>
-
-	<amp-sidebar id="sidebar" layout="nodisplay" side="left">
-        <p class="sidebar-divider">News Pages</p>
-		<div class="sidebar-menu">
-            <a href="index-news-2.php" class="sidebar-item"><i class="fa fa-newspaper-o"></i>News Front Slider<i class="fa fa-circle"></i></a>
-            <a href="index-news.php" class="sidebar-item active-menu"><i class="fa fa-newspaper-o"></i>News Front Static<i class="fa fa-circle"></i></a>
-			<a href="list-thumbs.php" class="sidebar-item"><i class="fa fa-th-large"></i>News List Thumbs<i class="fa fa-circle"></i></a>
-			<a href="list-strips.php" class="sidebar-item"><i class="fa fa-navicon"></i>News List Strips<i class="fa fa-circle"></i></a>
-			<a href="list-columns.php" class="sidebar-item"><i class="fa fa-th-list"></i>News List Columns<i class="fa fa-circle"></i></a>
-			<a href="post-stacked.php" class="sidebar-item"><i class="fa fa-sticky-note-o"></i>News Post Stack<i class="fa fa-circle"></i></a>
-			<a href="post-full.php" class="sidebar-item"><i class="fa fa-arrows-alt"></i>News Post Full<i class="fa fa-circle"></i></a>
-			<a href="post-boxed.php" class="sidebar-item"><i class="fa fa-stop"></i>News Post Boxed<i class="fa fa-circle"></i></a>
-		</div>
-		<p class="sidebar-divider full-bottom">Extra Pages</p>
-		<div class="sidebar-menu">
-            <a href="index-splash.php" class="sidebar-item"><i class="fa fa-star"></i>Splash<i class="fa fa-circle"></i></a>
-            <a href="index-landing.php" class="sidebar-item"><i class="fa fa-th"></i>Landing<i class="fa fa-circle"></i></a>
-			<a href="features.php" class="sidebar-item"><i class="fa fa-cog"></i>Features<i class="fa fa-circle"></i></a>
-		</div>
-        <amp-accordion class="sidebar-menu">
-			<section>
-				<h4><i class="fa fa-bolt"></i>AMP Media<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="amp-daily.php"><i class="fa fa-angle-right"></i>AMP Daily Motion<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-jwp.php"><i class="fa fa-angle-right"></i>AMP JWPlayer<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-soundcloud.php"><i class="fa fa-angle-right"></i>AMP SoundCloud<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-vimeo.php"><i class="fa fa-angle-right"></i>AMP Vimeo<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-youtube.php"><i class="fa fa-angle-right"></i>AMP YouTube<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-bolt"></i>AMP Social<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="amp-facebook.php"><i class="fa fa-angle-right"></i>AMP Facebook<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-twitter.php"><i class="fa fa-angle-right"></i>AMP Twitter<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-instagram.php"><i class="fa fa-angle-right"></i>AMP Instagram<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-pinterest.php"><i class="fa fa-angle-right"></i>AMP Pinterest<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-social.php"><i class="fa fa-angle-right"></i>AMP Social Share<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-bolt"></i>AMP Features<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="amp-accordion.php"><i class="fa fa-angle-right"></i>AMP Accordion<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-carousel.php"><i class="fa fa-angle-right"></i>AMP Carousel<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-fonts.php"><i class="fa fa-angle-right"></i>AMP Fonts<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-maps.php"><i class="fa fa-angle-right"></i>AMP Maps<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-lightbox.php"><i class="fa fa-angle-right"></i>AMP LightBox<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-list.php"><i class="fa fa-angle-right"></i>AMP List<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-social.php"><i class="fa fa-angle-right"></i>AMP Social Share<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-notifications.php"><i class="fa fa-angle-right"></i>AMP User Notifications<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-file-o"></i>Page Templates<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="page-404.php"><i class="fa fa-angle-right"></i>404 Page<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-soon.php"><i class="fa fa-angle-right"></i>Coming Soon<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-profile-1.php"><i class="fa fa-angle-right"></i>Profile Page 1<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-profile-2.php"><i class="fa fa-angle-right"></i>Profile Page 2<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-timeline-1.php"><i class="fa fa-angle-right"></i>Timeline Page 1<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-timeline-2.php"><i class="fa fa-angle-right"></i>Timeline Page 2<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-camera"></i>Gallery<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="gallery-round.php"><i class="fa fa-angle-right"></i>Round<i class="fa fa-circle"></i></a></li>
-					<li><a href="gallery-square.php"><i class="fa fa-angle-right"></i>Squared<i class="fa fa-circle"></i></a></li>
-					<li><a href="gallery-wide.php"><i class="fa fa-angle-right"></i>Wide<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-picture-o"></i>Portfolio<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="portfolio-1.php"><i class="fa fa-angle-right"></i>One Item<i class="fa fa-circle"></i></a></li>
-					<li><a href="portfolio-2.php"><i class="fa fa-angle-right"></i>Two Items<i class="fa fa-circle"></i></a></li>
-					<li><a href="portfolio-selected.php"><i class="fa fa-angle-right"></i>Selected Item<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-		</amp-accordion>
-		<div class="sidebar-menu">
-			<a href="contact.php" class="sidebar-item"><i class="fa fa-envelope"></i>Contact<i class="fa fa-circle"></i></a>
-		</div>
-        <p class="sidebar-divider">Let's get Social</p>
-		<div class="sidebar-menu">
-			<a href="https://twitter.com/iEnabled" class="sidebar-item"><i class="fa fa-facebook"></i>Facebook<i class="fa fa-circle"></i></a>
-			<a href="https://www.facebook.com/enabled.labs/" class="sidebar-item"><i class="fa fa-twitter"></i>Twitter<i class="fa fa-circle"></i></a>
-            <a href="https://plus.google.com/u/1/105775801838187143320" class="sidebar-item"><i class="fa fa-google-plus"></i>Google +<i class="fa fa-circle"></i></a>
-            <a href="tel:+123 456 7890" class="sidebar-item"><i class="fa fa-phone"></i>Call Us<i class="fa fa-circle"></i></a>
-            <a href="sms:+123 456 7890" class="sidebar-item"><i class="fa fa-comment-o"></i>Text Us<i class="fa fa-circle"></i></a>
-            <a href="contact.php" class="sidebar-item"><i class="fa fa-envelope-o"></i>Mail Us<i class="fa fa-circle"></i></a>
-        </div>
-        <p class="sidebar-divider sidebar-copyright">Copyright Here. All rights reserved.</p>
-	</amp-sidebar>
 
 <div class="contentmargin">
     <div class="news-top half-bottom">
@@ -1508,14 +1498,14 @@ padding-bottom:20px;
 						<section>
 						<!--    <h4><i class="fa fa-retweet"></i></h4> -->
 								<p>
-										<amp-social-share type="facebook" data-param-app_id="1002609923206893"
+										<amp-social-share id="clkfacebook" type="facebook" data-param-app_id="1002609923206893"
 										data-param-href="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html" width="43" height="40">
 
 											</amp-social-share>
-										<amp-social-share type="twitter" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
+										<amp-social-share id="clktwitter" type="twitter" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
 										width="43" height="40">
 											</amp-social-share>
-										<amp-social-share type="whatsapp" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
+										<amp-social-share id="clkwhatsapp" type="whatsapp" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
 										width="43" height="40">
 											</amp-social-share>
 							 </p>
@@ -1528,20 +1518,16 @@ padding-bottom:20px;
 
 		<div class="content">
         <div class="news-boxes full-bottom">
-      <!--    <a href="gallery-square.html"> -->
 						<div class="news-box-item">
                 <amp-img src="images/pictures/HanuamnChalisaPocketpdf200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
                 <u class="bg-blue-dark">अनुष्ठान </u>
                 <strong>हनुमान चालीसा अनुष्ठान प्रथा </strong>
-              <!---  <em>1 hour ago</em>  --->
-							<a href="hanuman-chalisa-hindi-chanting-procedure.html"
-						class="button bg-blue-light">आगे पढ़ें</a>
+							<a id="clkpocketdownload" href="hanuman-chalisa-hindi-download.html" class="button bg-blue-light">आगे पढ़ें</a>
             </div>
             <div class="news-box-item">
                 <amp-img src="images/pictures/HanumanChalisaChamatkaar200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
                 <u class="bg-green-dark"> हनुमान चालीसा का महत्व </u>
                 <strong>हनुमान चालीसा के अद्भुत फ़ायदे </strong>
-            <!--    <em>2 hour ago</em>  --->
 					   <a href="hanuman-chalisa-hindi-benifits.html"
 						class="button bg-blue-light">आगे पढ़ें</a>
             </div>
