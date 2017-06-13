@@ -5,11 +5,22 @@
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
 <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
 <!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
 <link rel="canonical" href="index.html">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- for Facebook -->
+<meta property="og:title" content="हनुमान चालीसा के ५ बड़े फायदे" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://templetree.github.io/images/pictures/HanumanCoverOG.jpg" />
+<meta property="og:url" content="https://templetree.github.io/" />
+<meta property="og:description" content="हनुमान चालीसा का अनुष्ठान विधि और इसके वैज्ञानिक अनुष्ठान के फायदे " />
+<meta property="og:site_name" content="संपूर्ण हनुमान चालीसा अनुष्ठान विधि के साथ "/>
+<meta property="fb:app_id" content="1002609923206893"/>
+
 <style amp-custom>
 body{font-family:'Roboto', sans-serif; font-size:14px; background-color:#FFFFFF;}
 
@@ -804,8 +815,14 @@ ol, ul{line-height:24px; margin-left:20px;}
 .button{
 	display:inline-block;
 	padding:13px 20px;
-	margin:0px 0px 25px 0px;
-	font-size:12px;
+	margin:0px 0px 10px 20px;   /** top,right,bottom,left */
+	font-size:16px;
+}
+
+.news-box-item .button
+{
+font-size:12px;
+margin:5px 0px 25px 0px;   /** top,right,bottom,left */
 }
 
 .button-round{border-radius:30px;}
@@ -1355,12 +1372,94 @@ padding-bottom:20px;
 		margin-right:0%;
 	}
 }
+#clkprocedure{ }
+#clkpocketdownload{ }
+#clktwitter{ }
+#clkfacebook{ }
+#clkwhatsapp{ }
 </style>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 
 
 <body>
+	<!-- AMP Analytics -->
+	<amp-analytics type="googleanalytics">
+	<script type="application/json">
+	{
+		"vars": {
+			"account": "UA-100886656-1"
+		},
+		"triggers": {
+			"trackPageview": {
+				"on": "visible",
+				"request": "pageview"
+			},
+			"trackClickOnHeader" : {
+				"on": "click",
+				"selector": "#clkpocketdownload",
+				"request": "event",
+				"vars": {
+					"eventCategory": "Pocketpdf",
+					"eventAction": "header-benifits"
+				}
+			},
+			"trackClickOnProcedure" : {
+				"on": "click",
+				"selector": "#clkprocedure",
+				"request": "event",
+				"vars": {
+					"eventCategory": "Procedure",
+					"eventAction": "header-benifits"
+				}
+			},
+
+			"trackClickOnTwitter" : {
+				"on": "click",
+				"selector": "#clktwitter",
+				"request": "event",
+				"vars": {
+					"socialNetwork": "twitter",
+					"socialAction": "tweet",
+					"socialTarget": "Benifits"
+				}
+			},
+			"trackClickOnFacebook" : {
+				"on": "click",
+				"selector": "#clkfacebook",
+				"request": "event",
+				"vars": {
+					"socialNetwork": "Facebook",
+					"socialAction": "Share",
+					"socialTarget": "Benifits"
+				}
+			},
+			"trackClickOnWhatsapp" : {
+				"on": "click",
+				"selector": "#clkwhatsapp",
+				"request": "event",
+				"vars": {
+					"socialNetwork": "Whatsapp",
+					"socialAction": "Share",
+					"socialTarget": "Benifits"
+				}
+			},
+		"scrollPings": {
+		 "on": "scroll",
+		 "scrollSpec": {
+			 "verticalBoundaries": [25, 50, 90],
+			 "horizontalBoundaries": [90]
+		 },
+		 "request": "event",
+		 "vars": {
+			 "eventId": "scroll"
+		 }
+	 }
+		}
+	}
+	</script>
+	</amp-analytics>
+	<!--  AMP Analytics --->
 
 	<header>
 		<div class="header-logo">
@@ -1379,10 +1478,10 @@ padding-bottom:20px;
 							<div class="para">
 							ऐसी मान्यता है कि, कलियुग में एक मात्र हनुमान जी ही जीवित देवता हैं।<br>
 							       यह अपने भक्तों और आराधकों पर सदैव कृपालु रहते हैं और उनकी हर
-										 इच्छा पूरी करते हैं। <br>
+										 इच्छा पूरी करते हैं । <br>
 										 हनुमान जी की कृपा से ही तुलसीदास जी को भगवान राम के
 										 दर्शन हुए थे। शिवाजी महाराज के गुरू समर्थ रामदास के बारे में भी कहा जाता
-										 है कि उन्हें हनुमान जी ने दर्शन दिए थे।ि
+										 है कि उन्हें हनुमान जी ने दर्शन दिए थे।
 									 </div>
 </strong>
 </div>
@@ -1507,14 +1606,14 @@ padding-bottom:20px;
 								<section>
 								<!--    <h4><i class="fa fa-retweet"></i></h4> -->
 										<p>
-												<amp-social-share type="facebook" data-param-app_id="1002609923206893"
+												<amp-social-share id="clkfacebook" type="facebook" data-param-app_id="1002609923206893"
 												data-param-href="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html" width="43" height="40">
 
 													</amp-social-share>
-												<amp-social-share type="twitter" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
+												<amp-social-share id="clktwitter" type="twitter" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
 												width="43" height="40">
 													</amp-social-share>
-												<amp-social-share type="whatsapp" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
+												<amp-social-share id="clkwhatsapp" type="whatsapp" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
 												width="43" height="40">
 													</amp-social-share>
 									 </p>
@@ -1530,24 +1629,19 @@ padding-bottom:20px;
         <div class="news-boxes full-bottom">
       <!--    <a href="gallery-square.html"> -->
 						<div class="news-box-item">
-                <amp-img src="images/pictures/HanumanChalisaAnusthan200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                <u class="bg-green-dark">HD Wallpaper</u>
-                <strong>Mobile Websites are the Future of Your Website</strong>
-              <!---  <em>1 hour ago</em>  --->
-							</a>
-							<a href="amp-maps.html" class="sachin">
-							DOWNLOAD
-						</a>
+                <amp-img src="images/pictures/HanumanChalisaAnusthaan200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
+                <u class="bg-green-dark">Chanting method</u>
+                <strong>हनुमान चालीसा अनुष्ठान प्रथा</strong>
+								<a id="clkprocedure" href="hanuman-chalisa-hindi-chanting-procedure.html"
+								class="button bg-blue-light" >आगे पढ़ें </a>
 					</div> <!-- News box --->
 
             <div class="news-box-item">
-                <amp-img src="images/pictures/HanumanChalisaAnusthan200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                <u class="bg-green-dark">HD Wallpaper</u>
-                <strong>The Bolt Icon in Search Results is Awesome</strong>
-					   </a>
-					    <a href="amp-maps.html" class="sachin">
-					       DOWNLOAD
-				      </a>
+                <amp-img src="images/pictures/HanuamnChalisaPocketpdf200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
+                <u class="bg-green-dark">Pocket PDFr</u>
+                <strong>हनुमान चालीसा पॉकेट पीडीऍफ़ फॉर्मेट</strong>
+								<a id="clkpocketdownload" href="hanuman-chalisa-hindi-download.html"
+	 						 class="button bg-blue-light" >आगे पढ़ें </a>
             </div> <!-- News Box item -->
 
             <div class="clear"></div>

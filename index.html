@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black">
 <!-- for Facebook -->
-<meta property="og:title" content="हनुमान चालिसके दुनिया का सबसे प्रभावशाली मंत्र" />
+<meta property="og:title" content="हनुमान चालीसा दुनिया का सबसे प्रभावशाली मंत्र" />
 <meta property="og:type" content="article" />
 <meta property="og:image" content="https://templetree.github.io/images/pictures/HanumanCoverOG.jpg" />
 <meta property="og:url" content="https://templetree.github.io/" />
@@ -1350,6 +1350,9 @@ margin:5px 0px 25px 0px;   /** top,right,bottom,left */
 #clkprocedure{ }
 #clkwallpaper1{ }
 #clkwallpaper2{ }
+#clktwitter{ }
+#clkfacebook{ }
+#clkwhatsapp{ }
 
 </style>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -1378,7 +1381,7 @@ margin:5px 0px 25px 0px;   /** top,right,bottom,left */
         "eventAction": "header-click"
       }
     },
-		"trackClickOnHeader" : {
+		"trackClickOnBenifits" : {
       "on": "click",
       "selector": "#clkbenifits",
       "request": "event",
@@ -1387,7 +1390,7 @@ margin:5px 0px 25px 0px;   /** top,right,bottom,left */
         "eventAction": "header-click"
       }
     },
-		"trackClickOnHeader" : {
+		"trackClickOnProcedure" : {
       "on": "click",
       "selector": "#clkprocedure",
       "request": "event",
@@ -1396,7 +1399,7 @@ margin:5px 0px 25px 0px;   /** top,right,bottom,left */
         "eventAction": "header-click"
       }
     },
-		"trackClickOnHeader" : {
+		"trackClickOnWallpaper1" : {
 			"on": "click",
 			"selector": "#clkwallpaper1",
 			"request": "event",
@@ -1405,13 +1408,43 @@ margin:5px 0px 25px 0px;   /** top,right,bottom,left */
 				"eventAction": "header-click"
 			}
 		},
-		"trackClickOnHeader" : {
+		"trackClickOnWallpaper2" : {
 			"on": "click",
 			"selector": "#clkwallpaper2",
 			"request": "event",
 			"vars": {
 				"eventCategory": "Wallpaper2",
 				"eventAction": "header-click"
+			}
+		},
+    "trackClickOnTwitter" : {
+			"on": "click",
+			"selector": "#clktwitter",
+			"request": "event",
+			"vars": {
+        "socialNetwork": "twitter",
+        "socialAction": "tweet",
+        "socialTarget": "Index"
+			}
+		},
+    "trackClickOnFacebook" : {
+			"on": "click",
+			"selector": "#clkfacebook",
+			"request": "event",
+			"vars": {
+        "socialNetwork": "Facebook",
+        "socialAction": "Share",
+        "socialTarget": "Index"
+			}
+		},
+    "trackClickOnWhatsapp" : {
+			"on": "click",
+			"selector": "#clkwhatsapp",
+			"request": "event",
+			"vars": {
+        "socialNetwork": "Whatsapp",
+        "socialAction": "Share",
+        "socialTarget": "Index"
 			}
 		},
 	"scrollPings": {
@@ -1469,16 +1502,16 @@ margin:5px 0px 25px 0px;   /** top,right,bottom,left */
             </strong>
           <!---  <em>2 hours ago</em> --->
             </a>
-					<a id="#clkpocketdownload" href="content/HanumanChalisaPocketPDF.pdf" download
+					<a id="clkpocketdownload" href="content/HanumanChalisaPocketPDF.pdf" download
 					class="button bg-blue-light" >डाउनलोड</a>
 				  <div class="news-share">
             <section>
                 <p>
-                    <amp-social-share type="facebook" data-param-app_id="1002609923206893"
+                    <amp-social-share id= "clkfacebook" type="facebook" data-param-app_id="1002609923206893"
 										data-param-href="https://templetree.github.io" width="43" height="40">
 									</amp-social-share>
-                    <amp-social-share type="twitter"data-param-url="https://templetree.github.io" width="43" height="40" ></amp-social-share>
-                    <amp-social-share type="whatsapp" data-param-url="https://templetree.github.io" width="43" height="40"></amp-social-share>
+                    <amp-social-share id="clktwitter" type="twitter"data-param-url="https://templetree.github.io" width="43" height="40" ></amp-social-share>
+                    <amp-social-share id="clkwhatsapp" type="whatsapp" data-param-url="https://templetree.github.io" width="43" height="40"></amp-social-share>
                 </p>
             </section>
         </div>
@@ -1501,7 +1534,7 @@ margin:5px 0px 25px 0px;   /** top,right,bottom,left */
  </strong>
         </a>
 
-			 <a id="#clkbenifits" href="hanuman-chalisa-hindi-benifits.html"
+			 <a id="clkbenifits" href="hanuman-chalisa-hindi-benifits.html"
 			 class="button bg-blue-light">आगे पढ़ें</a>
 
 			 <div class="news-share">
@@ -1530,7 +1563,7 @@ margin:5px 0px 25px 0px;   /** top,right,bottom,left */
               जैसे झील में तरंग की तरफ फैलता है, इसी तरह मंत्र की आवाज़ आपके चेतना में अपनी कंपन फैलती है।
 						</strong>
               </a>
-							<a id="#clkprocedure" href="hanuman-chalisa-hindi-chanting-procedure.html"
+							<a id="clkprocedure" href="hanuman-chalisa-hindi-chanting-procedure.html"
 							 class="button bg-blue-light ">आगे पढ़ें</a>
 							 <div class="news-share">
 								 <section>
@@ -1557,7 +1590,7 @@ margin:5px 0px 25px 0px;   /** top,right,bottom,left */
                 <strong>हनुमान राम नाम के साथ </strong>
 							</a>
 						<a href="images/pictures/HanumanWithRam.jpg" download
-						class="button bg-blue-light" id="clkwallpaper1">डाउनलोडें</a>
+						class="button bg-blue-light" id="clkwallpaper1">डाउनलोड</a>
             </div>
 				<!---	</a>  --->
 
@@ -1566,9 +1599,8 @@ margin:5px 0px 25px 0px;   /** top,right,bottom,left */
                 <u class="bg-green-dark">HD Wallpaper</u>
                 <strong>वज्रदेहि हनुमान HD इमेज </strong>
             <!--    <em>2 hour ago</em>  --->
-					   </a>
-							<a href="images/pictures/hanumanbwwallpaper.jpg" download
-							class="button bg-blue-light" id="clkwallpaper2">डाउनलोडें</a>
+					  						<a href="images/pictures/hanumanbwwallpaper.jpg" download
+							class="button bg-blue-light" id="clkwallpaper2">डाउनलोड</a>
             </div>
 
             <div class="clear"></div>

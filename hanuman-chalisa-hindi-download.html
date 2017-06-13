@@ -11,6 +11,8 @@
 <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
 <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
 <!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
 <link rel="canonical" href="https://templetree.github.io">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -1373,12 +1375,106 @@ text-align:center;
 {
 padding-bottom:20px;
 }
+#clkpocketdownload{  }
+#clkbenifits{ }
+#clkprocedure{ }
+#clktwitter{ }
+#clkfacebook{ }
+#clkwhatsapp{ }
+
 </style>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 
 
 <body>
+	<!-- AMP Analytics -->
+	<amp-analytics type="googleanalytics">
+	<script type="application/json">
+	{
+	  "vars": {
+	    "account": "UA-100886656-1"
+	  },
+	  "triggers": {
+	    "trackPageview": {
+	      "on": "visible",
+	      "request": "pageview"
+	    },
+			"trackClickOnHeader" : {
+	      "on": "click",
+	      "selector": "#clkpocketdownload",
+	      "request": "event",
+	      "vars": {
+	        "eventCategory": "Pocketpdf",
+	        "eventAction": "header-download"
+	      }
+	    },
+			"trackClickOnBenifits" : {
+	      "on": "click",
+	      "selector": "#clkbenifits",
+	      "request": "event",
+	      "vars": {
+	        "eventCategory": "Benifits",
+	        "eventAction": "header-download"
+	      }
+	    },
+			"trackClickOnProcedure" : {
+	      "on": "click",
+	      "selector": "#clkprocedure",
+	      "request": "event",
+	      "vars": {
+	        "eventCategory": "Procedure",
+	        "eventAction": "header-download"
+	      }
+	    },
+
+	    "trackClickOnTwitter" : {
+				"on": "click",
+				"selector": "#clktwitter",
+				"request": "event",
+				"vars": {
+	        "socialNetwork": "twitter",
+	        "socialAction": "tweet",
+	        "socialTarget": "Index"
+				}
+			},
+	    "trackClickOnFacebook" : {
+				"on": "click",
+				"selector": "#clkfacebook",
+				"request": "event",
+				"vars": {
+	        "socialNetwork": "Facebook",
+	        "socialAction": "Share",
+	        "socialTarget": "Index"
+				}
+			},
+	    "trackClickOnWhatsapp" : {
+				"on": "click",
+				"selector": "#clkwhatsapp",
+				"request": "event",
+				"vars": {
+	        "socialNetwork": "Whatsapp",
+	        "socialAction": "Share",
+	        "socialTarget": "Index"
+				}
+			},
+		"scrollPings": {
+		 "on": "scroll",
+		 "scrollSpec": {
+			 "verticalBoundaries": [25, 50, 90],
+			 "horizontalBoundaries": [90]
+		 },
+		 "request": "event",
+		 "vars": {
+			 "eventId": "scroll"
+		 }
+	 }
+	  }
+	}
+	</script>
+	</amp-analytics>
+	<!--  AMP Analytics --->
+
 
 	<header>
 		<div class="header-logo">
@@ -1399,23 +1495,26 @@ padding-bottom:20px;
         <div class="news-header">
             <amp-img src="images/pictures/HanumanChalisaPocketpdf1600125.jpg" layout="responsive" width="600" height="120" alt="img"></amp-img>
             <strong>
-							यह हनुमान चालीसा मंत्र तुलसीदास जी का मूल कृति है और इसको श्री रामभद्राचार्य जी ने
+							यह हनुमान चालीसा,तुलसीदास जी रचित मूल कृति है और इसको श्री रामभद्राचार्य जी ने
 						प्रमाणित किया। <br>
 						संपूर्ण और प्रमाणित हनुमान चालीसा पॉकेट पीडीऍफ़ फॉर्मेट में ।<br>
 		        Pocket PDF format (1.8MB Only)
 					   </strong>
 					 </a>
-					 <a href="content/HanumanChalisaHindiPocketpdfVersion.pdf" download
-				 class="button bg-blue-light">डाउनलोडें</a>
+					 <a id="clkpocketdownload" href="content/HanumanChalisaPocketPDF.pdf" download
+				 class="button bg-blue-light">डाउनलोड</a>
 					</div>
           <!---  <em>2 hours ago</em> --->
 
     <div class="news-share">
             <section>
                 <p>
-                    <amp-social-share type="facebook" width="43" height="40" ></amp-social-share>
-                    <amp-social-share type="twitter" width="43" height="40" ></amp-social-share>
-                    <amp-social-share type="whatsapp" width="43" height="40" ></amp-social-share>
+                    <amp-social-share id-"clkfacebook" type="facebook" data-param-href="https://templetree.github.io/hanuman-chalisa-hindi-download.html"
+										data-param-app_id="1002609923206893" width="43" height="40" ></amp-social-share>
+                    <amp-social-share id="clktwitter" type="twitter" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-download.html"
+										width="43" height="40" ></amp-social-share>
+                    <amp-social-share id="clkwhatsapp" type="whatsapp" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-download.html"
+										width="43" height="40" ></amp-social-share>
                 </p>
             </section>
 					</div>
@@ -1519,11 +1618,14 @@ padding-bottom:20px;
 </div>
 <div class="news-share">
 				<section>
-						<p>
-								<amp-social-share type="facebook" width="43" height="40" ></amp-social-share>
-								<amp-social-share type="twitter" width="43" height="40" ></amp-social-share>
-								<amp-social-share type="whatsapp" width="43" height="40" ></amp-social-share>
-						</p>
+					<p>
+							<amp-social-share id="clkfacebook" type="facebook" data-param-href="https://templetree.github.io/hanuman-chalisa-hindi-download.html"
+							data-param-app_id="1002609923206893" width="43" height="40" ></amp-social-share>
+							<amp-social-share id="clktwitter" type="twitter" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-download.html"
+							width="43" height="40" ></amp-social-share>
+							<amp-social-share id="clkwhatsapp" type="whatsapp" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-download.html"
+							width="43" height="40" ></amp-social-share>
+					</p>
 				</section>
 			</div>
 </div>
@@ -1535,19 +1637,19 @@ padding-bottom:20px;
         <div class="news-boxes full-bottom">
       <!--    <a href="gallery-square.html"> -->
 						<div class="news-box-item">
-                <amp-img src="images/pictures/HanumanChalisaAnusthan200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
+                <amp-img src="images/pictures/HanumanChalisaAnusthaan200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
                 <u class="bg-blue-dark">अनुष्ठान </u>
                 <strong>हनुमान चालीसा अनुष्ठान प्रथा </strong>
               <!---  <em>1 hour ago</em>  --->
-							<a href="hanuman-chalisa-hindi-chanting-procedure.html"
+							<a id="clkprocedure" href="hanuman-chalisa-hindi-chanting-procedure.html"
 						class="button bg-blue-light">आगे पढ़ें</a>
             </div>
             <div class="news-box-item">
-                <amp-img src="images/pictures/HanumanChalisaChamatkar200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
+                <amp-img src="images/pictures/HanumanChalisaChamatkaar200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
                 <u class="bg-green-dark"> हनुमान चालीसा का महत्व </u>
                 <strong>हनुमान चालीसा के अद्भुत फ़ायदे </strong>
             <!--    <em>2 hour ago</em>  --->
-					   <a href="hanuman-chalisa-hindi-benifits.html"
+					   <a id= "clkbenifits" href="hanuman-chalisa-hindi-benifits.html"
 						class="button bg-blue-light">आगे पढ़ें</a>
             </div>
             </div>

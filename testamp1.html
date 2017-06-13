@@ -34,55 +34,100 @@
     #clkwallpaper3{}
     #clkwallpaper{}
     #clkpocketdownload{  }
-	#clkbenifits{ }
-	#clkprocedure{ }
-	#clkwallpaper1{ }
-    #clkwallpaper2{ }
+    #clkbenifits{ }
+    #clkprocedure{ }
+    #clkwallpaper1{ }
+    #clkwallpaper{ }
 
     </style>
 </head>
 <body>
+<!-- AMP Analytics -->
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
   "vars": {
     "account": "UA-100886656-1"
   },
-       "triggers": {
-       "trackPageview": {
-	         "on": "visible",
-	         "request": "pageview"
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
     },
-         "trackAnchorClicks": {
-		            "on": "click",
-		            "selector": "#clkwallpaper1",
-		            "request": "event",
-		            "vars": {
-		             "eventCategory": "Click1",
-		             "eventAction": "header-click"
-		            },
-         "trackAnchorClicks": {
-		            "on": "click",
-		            "selector": "#clkwallpaper2",
-		            "request": "event",
-		            "vars": {
-		             "eventCategory": "Click2",
-		             "eventAction": "header-click"
-		            }
-         }
-
+    "trackClickOnHeader" : {
+      "on": "click",
+      "selector": "#clkpocketdownload",
+      "request": "event",
+      "vars": {
+        "eventCategory": "Pocketpdf",
+        "eventAction": "header-click"
       }
-}
-}
+    },
+    "trackClickOnBenifits" : {
+      "on": "click",
+      "selector": "#clkbenifits",
+      "request": "event",
+      "vars": {
+        "eventCategory": "Benifits",
+        "eventAction": "header-click"
+      }
+    },
+    "trackClickOnProcedure" : {
+      "on": "click",
+      "selector": "#clkprocedure",
+      "request": "event",
+      "vars": {
+        "eventCategory": "Procedure",
+        "eventAction": "header-click"
+      }
+    },
+    "trackClickOnWallpaper1" : {
+      "on": "click",
+      "selector": "#clkwallpaper1",
+      "request": "event",
+      "vars": {
+        "eventCategory": "Wallpaper1",
+        "eventAction": "header-click"
+      }
+    },
+    "trackClickOnWallpaper2" : {
+      "on": "click",
+      "selector": "#clkwallpaper2",
+      "request": "event",
+      "vars": {
+        "eventCategory": "Wallpaper2",
+        "eventAction": "header-click"
+      }
+    },
+  "scrollPings": {
+   "on": "scroll",
+   "scrollSpec": {
+     "verticalBoundaries": [25, 50, 90],
+     "horizontalBoundaries": [90]
+   },
+   "request": "event",
+   "vars": {
+     "eventId": "scroll"
+   }
+  }
+  }
+  }
 </script>
 </amp-analytics>
 <!--  AMP Analytics --->
 
 <ul>
   <li>
-    <a id="clkwallpaper2"> a special link</a>.</li>
+    <a id="clkpocketdownload"> a special link</a>.</li>
+  <li>
+    <a id="clkbenifits">a not so special link</a>.</li>
+  <li>
+    <a id="clkprocedure">a not so special link</a>.</li>
   <li>
     <a id="clkwallpaper1">a not so special link</a>.</li>
+  <li>
+    <a id="clkwallpaper2">a not so special link</a>.</li>
+
 </ul>
 </body>
 </html>
