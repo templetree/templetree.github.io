@@ -1,19 +1,16 @@
 <!doctype html>
-<html ⚡>
+<html ⚡lang="hi">
 <head>
 <meta charset="utf-8">
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
-<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-<script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
-<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-	<!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
+<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+<!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
 <link rel="canonical" href="index.html">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black">
 <style amp-custom>
 body{font-family:'Roboto', sans-serif; font-size:14px; background-color:#FFFFFF;}
@@ -114,19 +111,6 @@ body{font-family:'Roboto', sans-serif; font-size:14px; background-color:#FFFFFF;
 .youtube-color{     color:#D12827;}
 .phone-color{       color:#27ae60;}
 .skype-color{       color:#12A5F4;}
-
-/*Background Images*/
-.bg-1{background-image:url(images/pictures/1.jpg)}
-.bg-2{background-image:url(images/pictures/2.jpg)}
-.bg-3{background-image:url(images/pictures/3.jpg)}
-.bg-4{background-image:url(images/pictures/4.jpg)}
-.bg-5{background-image:url(images/pictures/5.jpg)}
-.bg-6{background-image:url(images/pictures/6.jpg)}
-.bg-7{background-image:url(images/pictures/7.jpg)}
-.bg-8{background-image:url(images/pictures/8.jpg)}
-.bg-9{background-image:url(images/pictures/9.jpg)}
-.bg-body{background-image:url(images/pictures_vertical/bg2.jpg)}
-.overlay{background-color:rgba(0,0,0,0.8); position:absolute; top:0px; right:0px; bottom:0px; left:0px;}
 
 /*Font Settings*/
 h1{ font-size:24px; line-height:34px; font-weight:500;}
@@ -258,12 +242,13 @@ header{
 
 .header-icon-1, .header-icon-2{
 	position:absolute;
-	color:#1f1f1f;
+	/* color:#1f1f1f; */
+	color:#ffffff;
 	line-height:60px;
 	text-align:center;
 	width:60px;
 	display:block;
-	font-size:14px;
+	font-size:24px; /** Moved from 14px to 24px  **/
 	background-color:transparent;
 }
 
@@ -274,19 +259,27 @@ header{
 }
 
 .header-icon-2{
-    right:60px;
+  /*  right:60px; */
+	  left:10px;
     top:0px;
     border-left:dashed 1px rgba(0,0,0,0.05);
 }
 
 .header-logo{
-	background-image:url(images/logo-small.png);
+/*	background-image:url(images/logo-small.png) ;*/
+  background-color: #B71C1C;
 	background-size:100px 60px;
-	width:100px;
+	/* width:100px; */
+	width:100%;
 	height:60px;
 	display:block;
 }
-
+.header-logo h1
+{
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 13px;  /** 60px-34px /2 **/
+}
 .header-clear{
 	height:60px;
 }
@@ -813,8 +806,14 @@ ol, ul{line-height:24px; margin-left:20px;}
 .button{
 	display:inline-block;
 	padding:13px 20px;
-	margin:0px 0px 25px 0px;
-	font-size:12px;
+	margin:0px 0px 10px 20px;   /** top,right,bottom,left */
+	font-size:16px;
+}
+
+.news-box-item .button
+{
+font-size:12px;
+margin:5px 0px 25px 0px;   /** top,right,bottom,left */
 }
 
 .button-round{border-radius:30px;}
@@ -1140,7 +1139,7 @@ ol, ul{line-height:24px; margin-left:20px;}
     color:#000000;
     font-size:20px;
     padding:10px 20px 10px 20px;
-    font-weight:900;
+    font-weight:500;
 }
 
 .news-header em{
@@ -1252,7 +1251,13 @@ ol, ul{line-height:24px; margin-left:20px;}
     display:block;
     padding-top:10px;
 }
-
+.sachin
+{
+ color: #2196F3;
+ font-size:20px;
+ padding:10px 20px 10px 20px;
+ font-weight:900;
+}
 .news-box-share h4{
     background-color:transparent;
     border:none;
@@ -1316,123 +1321,231 @@ ol, ul{line-height:24px; margin-left:20px;}
     border-bottom:solid 1px rgba(0,0,0,0.1);
     margin-bottom:30px;
 }
+
+#contenttype
+{
+font-size:1.5em;
+font-weight: 800;
+color:#5F4B32;
+line-height:35px;
+text-align:center;
+}
+.spacing
+{
+padding-bottom:20px;
+}
+.contentmargin{
+	margin-left:20%;
+	margin-right:20%;
+}
+@media screen and (max-width: 800px) {
+	.contentmargin{
+		margin-left:0%;
+		margin-right:0%;
+	}
+}
+#clkbenifits{ }
+#clkpocketdownload{ }
+#clktwitter{ }
+#clkfacebook{ }
+#clkwhatsapp{ }
+
 </style>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 
 
-<body class="bg-body">
+<body>
+	<!-- AMP Analytics -->
+	<amp-analytics type="googleanalytics">
+	<script type="application/json">
+	{
+		"vars": {
+			"account": "UA-100886656-1"
+		},
+		"triggers": {
+			"trackPageview": {
+				"on": "visible",
+				"request": "pageview"
+			},
+			"trackClickOnHeader" : {
+				"on": "click",
+				"selector": "#clkpocketdownload",
+				"request": "event",
+				"vars": {
+					"eventCategory": "Pocketpdf",
+					"eventAction": "header-procedure"
+				}
+			},
+			"trackClickOnBenifits" : {
+				"on": "click",
+				"selector": "#clkbenifits",
+				"request": "event",
+				"vars": {
+					"eventCategory": "Benifits",
+					"eventAction": "header-procedure"
+				}
+			},
+
+			"trackClickOnTwitter" : {
+				"on": "click",
+				"selector": "#clktwitter",
+				"request": "event",
+				"vars": {
+					"socialNetwork": "twitter",
+					"socialAction": "tweet",
+					"socialTarget": "Procedure"
+				}
+			},
+			"trackClickOnFacebook" : {
+				"on": "click",
+				"selector": "#clkfacebook",
+				"request": "event",
+				"vars": {
+					"socialNetwork": "Facebook",
+					"socialAction": "Share",
+					"socialTarget": "Procedure"
+				}
+			},
+			"trackClickOnWhatsapp" : {
+				"on": "click",
+				"selector": "#clkwhatsapp",
+				"request": "event",
+				"vars": {
+					"socialNetwork": "Whatsapp",
+					"socialAction": "Share",
+					"socialTarget": "Benifits"
+				}
+			},
+		"scrollPings": {
+		 "on": "scroll",
+		 "scrollSpec": {
+			 "verticalBoundaries": [25, 50, 90],
+			 "horizontalBoundaries": [90]
+		 },
+		 "request": "event",
+		 "vars": {
+			 "eventId": "scroll"
+		 }
+	 }
+		}
+	}
+	</script>
+	</amp-analytics>
+	<!--  AMP Analytics --->
+
 	<header>
-        <button class="header-icon-2" on='tap:sidebar.toggle'><i class="fa fa-navicon"></i></button>
-        <a href="contact.php" class="header-icon-1"><i class="fa fa-envelope-o"></i></a>
-	</header>
+		<div class="header-logo">
+     <h1> हनुमान चालीसा </h1>
+	 </div>
+	 <!---
+		 <button class="header-icon-2" on='tap:sidebar.toggle'><i class="fa fa-arrow-left "></i></button>
+   --->
+
+		 <a href="hanuman-chalisa-hindi-index.html" class="header-icon-2">
+     <i class="material-icons">keyboard_backspace</i>
+     </a>
+	 </header>
 	<div class="header-clear"></div>
 
-	<amp-sidebar id="sidebar" layout="nodisplay" side="left">
-        <p class="sidebar-divider">News Pages</p>
-		<div class="sidebar-menu">
-            <a href="index-news-2.php" class="sidebar-item"><i class="fa fa-newspaper-o"></i>News Front Slider<i class="fa fa-circle"></i></a>
-            <a href="index-news.php" class="sidebar-item"><i class="fa fa-newspaper-o"></i>News Front Static<i class="fa fa-circle"></i></a>
-			<a href="list-thumbs.php" class="sidebar-item"><i class="fa fa-th-large"></i>News List Thumbs<i class="fa fa-circle"></i></a>
-			<a href="list-strips.php" class="sidebar-item"><i class="fa fa-navicon"></i>News List Strips<i class="fa fa-circle"></i></a>
-			<a href="list-columns.php" class="sidebar-item"><i class="fa fa-th-list"></i>News List Columns<i class="fa fa-circle"></i></a>
-			<a href="post-stacked.php" class="sidebar-item"><i class="fa fa-sticky-note-o"></i>News Post Stack<i class="fa fa-circle"></i></a>
-			<a href="post-full.php" class="sidebar-item"><i class="fa fa-arrows-alt"></i>News Post Full<i class="fa fa-circle"></i></a>
-			<a href="post-boxed.php" class="sidebar-item"><i class="fa fa-stop"></i>News Post Boxed<i class="fa fa-circle"></i></a>
-		</div>
-		<p class="sidebar-divider full-bottom">Extra Pages</p>
-		<div class="sidebar-menu">
-            <a href="index-splash.php" class="sidebar-item active-menu"><i class="fa fa-star"></i>Splash<i class="fa fa-circle"></i></a>
-            <a href="index-landing.php" class="sidebar-item"><i class="fa fa-th"></i>Landing<i class="fa fa-circle"></i></a>
-			<a href="features.php" class="sidebar-item"><i class="fa fa-cog"></i>Features<i class="fa fa-circle"></i></a>
-		</div>
-        <amp-accordion class="sidebar-menu">
-			<section>
-				<h4><i class="fa fa-bolt"></i>AMP Media<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="amp-daily.php"><i class="fa fa-angle-right"></i>AMP Daily Motion<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-jwp.php"><i class="fa fa-angle-right"></i>AMP JWPlayer<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-soundcloud.php"><i class="fa fa-angle-right"></i>AMP SoundCloud<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-vimeo.php"><i class="fa fa-angle-right"></i>AMP Vimeo<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-youtube.php"><i class="fa fa-angle-right"></i>AMP YouTube<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-bolt"></i>AMP Social<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="amp-facebook.php"><i class="fa fa-angle-right"></i>AMP Facebook<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-twitter.php"><i class="fa fa-angle-right"></i>AMP Twitter<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-instagram.php"><i class="fa fa-angle-right"></i>AMP Instagram<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-pinterest.php"><i class="fa fa-angle-right"></i>AMP Pinterest<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-social.php"><i class="fa fa-angle-right"></i>AMP Social Share<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-bolt"></i>AMP Features<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="amp-accordion.php"><i class="fa fa-angle-right"></i>AMP Accordion<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-carousel.php"><i class="fa fa-angle-right"></i>AMP Carousel<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-fonts.php"><i class="fa fa-angle-right"></i>AMP Fonts<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-maps.php"><i class="fa fa-angle-right"></i>AMP Maps<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-lightbox.php"><i class="fa fa-angle-right"></i>AMP LightBox<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-list.php"><i class="fa fa-angle-right"></i>AMP List<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-social.php"><i class="fa fa-angle-right"></i>AMP Social Share<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-notifications.php"><i class="fa fa-angle-right"></i>AMP User Notifications<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-file-o"></i>Page Templates<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="page-404.php"><i class="fa fa-angle-right"></i>404 Page<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-soon.php"><i class="fa fa-angle-right"></i>Coming Soon<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-profile-1.php"><i class="fa fa-angle-right"></i>Profile Page 1<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-profile-2.php"><i class="fa fa-angle-right"></i>Profile Page 2<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-timeline-1.php"><i class="fa fa-angle-right"></i>Timeline Page 1<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-timeline-2.php"><i class="fa fa-angle-right"></i>Timeline Page 2<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-camera"></i>Gallery<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="gallery-round.php"><i class="fa fa-angle-right"></i>Round<i class="fa fa-circle"></i></a></li>
-					<li><a href="gallery-square.php"><i class="fa fa-angle-right"></i>Squared<i class="fa fa-circle"></i></a></li>
-					<li><a href="gallery-wide.php"><i class="fa fa-angle-right"></i>Wide<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-picture-o"></i>Portfolio<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="portfolio-1.php"><i class="fa fa-angle-right"></i>One Item<i class="fa fa-circle"></i></a></li>
-					<li><a href="portfolio-2.php"><i class="fa fa-angle-right"></i>Two Items<i class="fa fa-circle"></i></a></li>
-					<li><a href="portfolio-selected.php"><i class="fa fa-angle-right"></i>Selected Item<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-		</amp-accordion>
-		<div class="sidebar-menu">
-			<a href="contact.php" class="sidebar-item"><i class="fa fa-envelope"></i>Contact<i class="fa fa-circle"></i></a>
-		</div>
-        <p class="sidebar-divider">Let's get Social</p>
-		<div class="sidebar-menu">
-			<a href="https://twitter.com/iEnabled" class="sidebar-item"><i class="fa fa-facebook"></i>Facebook<i class="fa fa-circle"></i></a>
-			<a href="https://www.facebook.com/enabled.labs/" class="sidebar-item"><i class="fa fa-twitter"></i>Twitter<i class="fa fa-circle"></i></a>
-            <a href="https://plus.google.com/u/1/105775801838187143320" class="sidebar-item"><i class="fa fa-google-plus"></i>Google +<i class="fa fa-circle"></i></a>
-            <a href="tel:+123 456 7890" class="sidebar-item"><i class="fa fa-phone"></i>Call Us<i class="fa fa-circle"></i></a>
-            <a href="sms:+123 456 7890" class="sidebar-item"><i class="fa fa-comment-o"></i>Text Us<i class="fa fa-circle"></i></a>
-            <a href="contact.php" class="sidebar-item"><i class="fa fa-envelope-o"></i>Mail Us<i class="fa fa-circle"></i></a>
+<div class="contentmargin">
+    <div class="news-top half-bottom">
+        <div class="news-header">
+            <amp-img src="../resources/HanumanAnusthaan600120.jpg" layout="responsive" width="600" height="120" alt="img"></amp-img>
+            <strong>श्रहम सभी, शब्दों को अपने विचार व्यक्त करने और हमारी जरूरतों को पूरा करने के ल
+							       िए इस्तेमाल करते हैं, एक दिन में करीब 15,000 शब्द बोलते हैं। मंत्र एक ध्वनि, शब्दांश,
+										 शब्द या वाक्यांश है, जिसका उपयोग एक आध्यात्मिक अनुभव प्राप्त करने, एक लक्ष्य प्राप्त करने या खुद को बेहतर बनाने के लिए अनुष्ठान करते हैं।
+                     हनुमान चालीसा एक मात्रा ऐसा मंत्र है जिसके सही अनुष्ठान से, आरोग्य ,वीर्य, धनराषि और मुक्ति प्राप्त होते हैं.
+            </strong>
+						<!---  <em>2 hours ago</em> --->
         </div>
-        <p class="sidebar-divider sidebar-copyright">Copyright Here. All rights reserved.</p>
-	</amp-sidebar>
+    </div>
 
-	<div class="splash-content">
-		<a href="index.html" class="splash-logo"></a>
-		<h2 class="color-white center-text">Google AMP</h2>
-		<h6 class="color-gray-dark thin center-text half-bottom">Fast, simple, efficient</h6>
-		<p class="center-text color-gray-light">
-			Google AMP aims to simplify the way you use the internet. The biggest trend on the market!
-			All aboard!
-		</p>
-		<a href="/hanuman/hindi/pages/hanuman-chalisa-hindi-index" class="splash-button bg-red-dark">Welcome</a>
-	</div>
+    <div class="content">
+        <div class="decoration"></div>
+		</div>
 
+		<div class="news-top half-bottom">
+			 <div class="news-header">
+						<u class="bg-blue-dark">अनुष्ठान विधि </u>
+						<strong>
+							<div class = "mantra-text">
+							<b> तुह्मरे भजन राम को पावै । </b>
+							<article><b>जनम जनम के दुख बिसरावै ॥</b></article>
+							</div>
+							<br>
+							<div class="para">
+							1. हर मंगलवार और शनिवार को एक स्वच्छ और ताजा दिमाग के साथ हनुमान मंदिर जाना। <br>
+
+							2. चान हनुमान का नाम नियमित रूप से सुबह उठने और रात में बिस्तर से पहले की तरह होता है। <br>
+
+							3. खासकर शनिवार और मंगलवार को गैर-शाकाहारी भोजन से बचें। <br>
+
+							4. यदि कोई दीर्घकालिक रोगों से पीड़ित है, तो उसे स्वास्थ्य समस्याओं से प्रभावी और तेज़ राहत के लिए गैर-शाकाहारी भोजन लेने से बचना चाहिए। <br>
+
+							5. हनुमान चालीसा को एक दिन में कम से कम एक बार पढ़ो जब तक आप जीवन में अपनी समस्याओं को दूर नहीं करते। यह कवि तुलसी दास द्वारा लिखित एक 40 लाइन अनुष्ठान है, जिसे भगवान हनुमान का दिव्य रूप मिला है। <br>
+
+							6. शनिवार को भगवान हनुमान की पूजा करने के लिए, सिर पर तिल के बीज के साथ स्नान करना, हनुमान मंदिर जाना और तिल, चीनी और लाल चम्मच (कबूतर मटर) को 11 सप्ताह तक छोड़ दें और आप एक वास्तविक चमत्कार देखेंगे समस्याएँ।<br>
+
+							7. दैनिक या कम-से-कम हर शनिवार को तिल के तेल के साथ एक दीपक या गहरे जलाएं <br>
+
+							8. अगर किसी को हृदय की समस्या या चिंता या कुछ मानसिक तनाव हो, तो उसे हनुमान चालीसा को एक दिन में संभवतः कई बार जप करना पड़ेगा <br>
+
+		</div>
+		</strong>
+		 </div>
+				<div class="news-share">
+						<section>
+						<!--    <h4><i class="fa fa-retweet"></i></h4> -->
+								<p>
+										<amp-social-share id="clkfacebook" type="facebook" data-param-app_id="1002609923206893"
+										data-param-href="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html" width="43" height="40">
+
+											</amp-social-share>
+										<amp-social-share id="clktwitter" type="twitter" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
+										width="43" height="40">
+											</amp-social-share>
+										<amp-social-share id="clkwhatsapp" type="whatsapp" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
+										width="43" height="40">
+											</amp-social-share>
+							 </p>
+						</section>
+				</div>
+		</div>
+		<div class="content">
+				<div class="decoration"></div>
+		</div>
+
+		<div class="content">
+        <div class="news-boxes full-bottom">
+						<div class="news-box-item">
+                <amp-img src="../resources/HanuamnChalisaPocketpdf200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
+                <u class="bg-blue-dark">अनुष्ठान </u>
+                <strong>हनुमान चालीसा अनुष्ठान प्रथा </strong>
+							<a id="clkpocketdownload" href="hanuman-chalisa-hindi-download.html" class="button bg-blue-light">आगे पढ़ें</a>
+            </div>
+            <div class="news-box-item">
+                <amp-img src="../resources/HanumanChalisaChamatkaar200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
+                <u class="bg-green-dark"> हनुमान चालीसा का महत्व </u>
+                <strong>हनुमान चालीसा के अद्भुत फ़ायदे </strong>
+					   <a href="hanuman-chalisa-hindi-benifits.html"
+						class="button bg-blue-light">आगे पढ़ें</a>
+            </div>
+            </div>
+
+						<div class="footer">
+								<div class="footer-socials">
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-google-plus"></i></a>
+										<a href="#"><i class="fa fa-envelope-o"></i></a>
+										<a href="#"><i class="fa fa-chevron-up"></i></a>
+										<div class="clear"></div>
+								</div>
+						</div>
+            <div class="clear"></div>
+        </div>
+
+</div>
 </body>
 </html>
