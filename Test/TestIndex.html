@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+h4{ font-size:24px; line-height:28px; font-weight:500;}
+.border
+{
+  width:1024px;
+  margin-left:auto;
+  margin-right: auto;
+  position:relative;
+}
+
+.card {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding-bottom: 16px;
+   }
+.card.largecard
+{
+  width:1024px;
+  margin-bottom:32px;
+}
+
+.card.mediumcard
+{
+  width:496px;
+  float:left;
+  margin-left:8px;
+  margin-right: 8px;
+  position:relative;
+  margin-bottom:16px;
+}
+
+.card.smallcard
+{
+  width:324px;
+  float:left;
+  margin-bottom:16px;
+  margin-left:8px;
+  margin-right:8px;
+}
+
+.card.smallercard
+{
+  width:344px;
+  float:left;
+  margin-bottom:8px;
+  margin-left:16px;
+  margin-right:16px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.portrait {
+    height: 400px;
+    width: 1024px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 24px;
+  margin-left: 16px;
+  text-align: left;;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  }
+  .subtext
+  {
+  margin-bottom: 16px;
+  font-size: 14px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-weight:400;
+  }
+  .materialheading
+  {
+    margin-top: 0px;
+  }
+  .button{
+    position:relative;
+    right: 239px;
+    display:inline-block;
+    width:100px;
+    height:36px;
+    padding:13px 20px;
+  	margin:0px 0px 10px 20px;   /** top,right,bottom,left */
+  	font-size:14px;
+    font-weight: 800;
+    text-align: center;
+    box-shadow: 2px 2px 5px grey;
+    border-radius:2px;
+    background-color: #3498db; color:#FFFFFF
+
+  }
+  .btn {
+  position: relative;
+  display: block;
+  margin-left: 8px;
+  /* margin: 30px auto; */
+  margin-bottom: 8px;
+  padding: 0;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+  background-color: #2ecc71;
+  color: #ecf0f1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #27ae60;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+}
+
+.btn:before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 0;
+  padding-top: 0;
+
+  border-radius: 100%;
+
+  background-color: rgba(236, 240, 241, .3);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+/* Styles, not important */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  height: 100%;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.btn.orange {
+  background-color: #e67e22;
+}
+
+.btn.orange:hover, .btn.orange:focus {
+  background-color: #d35400;
+}
+
+.btn.red {
+  background-color: #e74c3c;
+}
+
+.btn.red:hover, .btn.red:focus {
+  background-color: #c0392b;
+}
+</style>
+</head>
+<body>
+<div class="border">
+
+<h2>Card</h2>
+
+<div class="card largecard">
+  <img src="images/pictures/HanumanChalisaCover1024576.jpg" alt="Avatar" >
+  <div class="container">
+    HANUMAN CHALISA
+  </div>
+  <div class="subtext">
+    The Hanuman Chalisa is a Hindu devotional hymn addressed to Hanuman.<br>
+    It is traditionally believed to have been authored by 16th-century poet
+    Tulsidas in the Awadhi language,<br> and is his best known text apart from the Ramcharitmanas <br>
+  </div>
+  </div>
+
+  <div class="card mediumcard">
+    <img src="images/pictures/HanumanChalisaCover720405.jpg" alt="Avatar" >
+    <div class="container">
+      HANUMAN CHALISA
+    </div>
+    <div class="subtext">
+      The Hanuman Chalisa is a Hindu devotional hymn addressed to Hanuman.<br>
+    </div>
+    <button class="btn" type="button"><span>BUTTON</span></button>
+    </div>
+
+    <div class="card mediumcard">
+      <img src="images/pictures/HanumanChalisaCover720405.jpg" alt="Avatar" >
+      <div class="container">
+        HANUMAN CHALISA
+      </div>
+      <div class="subtext">
+        The Hanuman Chalisa is a Hindu devotional hymn addressed to Hanuman.<br>
+        It is traditionally believed to have been authored by 16th-century poet
+        Tulsidas in the Awadhi language,  <br> test <br>
+      </div>
+      </div>
+        <div class="card smallcard">
+          <img src="images/pictures/HanumanChalisaCover480270.jpg" alt="Avatar" >
+          <div class="container">
+            HANUMAN CHALISA
+          </div>
+          <div class="subtext">
+            The Hanuman Chalisa is a Hindu devotional hymn
+          </div>
+          </div>
+          <div class="card smallcard">
+            <img src="images/pictures/HanumanChalisaCover480270.jpg" alt="Avatar" >
+            <div class="container">
+              HANUMAN CHALISA
+            </div>
+            <div class="subtext">
+              The Hanuman Chalisa is a Hindu devotional hymn
+            </div>
+            </div>
+            <div class="card smallcard">
+              <img src="images/pictures/HanumanChalisaCover480270.jpg" alt="Avatar" >
+              <div class="container">
+                HANUMAN CHALISA
+              </div>
+              <div class="subtext">
+                The Hanuman Chalisa is a Hindu devotional hymn
+              </div>
+              </div>
+
+
+</div>
+</body>
+</html>
