@@ -1,88 +1,372 @@
-
-
-<!doctype html>
-<html amp lang="en" >
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+<style>
+.border
+{
+  width:1024px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.my-large-card
+{
+ width:1024px;
+ margin-bottom: 16px;
+}
+.my-medium-card
+{
+  width:500px;
+  margin-bottom: 8px;
+}
+.my-title-card
+{
+  width:512px;
+  margin-bottom: 8px;
+}
+.my-small-card
+{
+  width:320px;
+  height:227px;
+  margin-bottom: 8px;
+}
+.my-media-card
+{
+  background-image: url("Material-design-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:300px;
+}
+
+.my-media-card_medium
+{
+  background-image: url("Material-design-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:282px;
+}
+
+.my-media-card_small
+{
+  background-image: url("Material-design-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:172px;
+}
+.card {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding-bottom: 16px;
+   }
+.card.largecard
+{
+  width:1024px;
+  margin-bottom:32px;
+}
+
+.card.mediumcard
+{
+  width:496px;
+  float:left;
+  margin-left:8px;
+  margin-right: 8px;
+  position:relative;
+  margin-bottom:16px;
+}
+
+.card.smallcard
+{
+  width:324px;
+  float:left;
+  margin-bottom:16px;
+  margin-left:8px;
+  margin-right:8px;
+}
+
+.card.smallercard
+{
+  width:344px;
+  float:left;
+  margin-bottom:8px;
+  margin-left:16px;
+  margin-right:16px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.portrait {
+    height: 400px;
+    width: 1024px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 24px;
+  margin-left: 16px;
+  text-align: left;;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  }
+  .subtext
+  {
+  margin-bottom: 16px;
+  font-size: 14px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-weight:400;
+  }
+  .materialheading
+  {
+    margin-top: 0px;
+  }
+  .button{
+    position:relative;
+    right: 239px;
+    display:inline-block;
+    width:100px;
+    height:36px;
+    padding:13px 20px;
+  	margin:0px 0px 10px 20px;   /** top,right,bottom,left */
+  	font-size:34px;
+    font-weight: 400;
+    text-align: center;
+    box-shadow: 2px 2px 5px grey;
+    border-radius:2px;
+    background-color: #3498db; color:#FFFFFF
+
+  }
+  .btn {
+  position: relative;
+  display: block;
+  margin-left: 8px;
+  /* margin: 30px auto; */
+  margin-bottom: 8px;
+  padding: 0;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+  background-color: #2ecc71;
+  color: #ecf0f1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #27ae60;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+}
+
+.btn:before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 0;
+  padding-top: 0;
+
+  border-radius: 100%;
+
+  background-color: rgba(236, 240, 241, .3);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
 
 
-  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
-  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-  <link rel="canonical" href="https://ampbyexample.com/components/amp-analytics/">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-  <style amp-custom>
-    .fixed-dashboard {
-        background-color: #e0e0e0;
-        position:fixed;
-        bottom: 0;
-        right: 0;
-        width:100%;
-        z-index: 100;
-    }
-    amp-carousel .slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      background: green;
-      color: white;
-    }
-    #clkwallpaper3{}
-    #clkwallpaper{}
-    #clkpocketdownload{  }
-	#clkbenifits{ }
-	#clkprocedure{ }
-	#clkwallpaper1{ }
-    #clkwallpaper2{ }
+h2 {
+  font-weight: normal;
+}
 
-    </style>
+.btn.orange {
+  background-color: #e67e22;
+}
+
+.btn.orange:hover, .btn.orange:focus {
+  background-color: #d35400;
+}
+
+.btn.red {
+  background-color: #e74c3c;
+}
+
+.btn.red:hover, .btn.red:focus {
+  background-color: #c0392b;
+}
+</style>
 </head>
 <body>
-<amp-analytics type="googleanalytics">
-<script type="application/json">
-{
-  "vars": {
-    "account": "UA-100886656-1"
-  },
-       "triggers": {
-       "trackPageview": {
-	         "on": "visible",
-	         "request": "pageview"
-    },
-         "trackAnchorClicks": {
-		            "on": "click",
-		            "selector": "#clkwallpaper1",
-		            "request": "event",
-		            "vars": {
-		             "eventCategory": "Click1",
-		             "eventAction": "header-click"
-		            },
-         "trackAnchorClicks": {
-		            "on": "click",
-		            "selector": "#clkwallpaper2",
-		            "request": "event",
-		            "vars": {
-		             "eventCategory": "Click2",
-		             "eventAction": "header-click"
-		            }
-         }
+  <header class="mdc-toolbar">
+  <div class="mdc-toolbar__row">
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+      <a href="#" class="material-icons">menu</a>
+      <span class="mdc-toolbar__title">HANUMAN</span>
+    </section>
+  </div>
+</header>
 
-      }
-}
-}
-</script>
-</amp-analytics>
-<!--  AMP Analytics --->
+<div class="border">
 
-<ul>
-  <li>
-    <a id="clkwallpaper2"> a special link</a>.</li>
-  <li>
-    <a id="clkwallpaper1">a not so special link</a>.</li>
-</ul>
+<h2>Card</h2>
+
+<section class="mdc-card my-large-card">
+<!--  <img src="Material-design-1.jpg" alt="Avatar" > -->
+
+<section class=" mdc-card_media my-media-card"> </section>
+  <h1 class="mdc-card__primary mdc-card__title--large">Hanuman Chalisa</h1>
+
+ <section class="mdc-card__supporting-text">
+   The Hanuman Chalisa is a Hindu devotional hymn addressed to Hanuman.<br>
+    It is traditionally believed to have been authored by 16th-century poet
+    Tulsidas in the Awadhi language,<br> and is his best known text apart from the Ramcharitmanas <br>
+  </section>
+  <section class="mdc-card__actions">
+    <button class="mdc-button mdc-button--compact mdc-card__action">DOWNLOAD</button>
+    <button class="mdc-button mdc-button--compact mdc-card__action">READ MORE</button>
+  </section>
+
+</section>
+
+<section class="mdc-card my-medium-card">
+<!--  <img src="Material-design-1.jpg" alt="Avatar" > -->
+
+<section class=" mdc-card_media my-media-card_medium"> </section>
+  <h1 class="mdc-card__primary mdc-card__title--large">Hanuman Chalisa</h1>
+
+ <section class="mdc-card__supporting-text">
+   Tulsidas in the Awadhi language,<br>
+   and is his best known text apart from the Ramcharitmanas <br>
+  </section>
+  <section class="mdc-card__actions">
+    <button class="mdc-button mdc-button--compact mdc-card__action">DOWNLOAD</button>
+    <button class="mdc-button mdc-button--compact mdc-card__action">READ MORE</button>
+  </section>
+
+</section>
+
+<section class="mdc-card my-title-card">
+<!--  <img src="Material-design-1.jpg" alt="Avatar" > -->
+ <section class="mdc-card__primary">
+<h1 class="mdc-card__title--large">How to read</h1>
+ <h2 class="mdc-card__subtitle">Benifits of making sense</h2>
+ </section>
+ <section class="mdc-card__supporting-text">
+   Tulsidas in the Awadhi language,<br>
+   and is his best known text apart from the Ramcharitmanas <br>
+  </section>
+  <section class="mdc-card__actions">
+    <button class="mdc-button mdc-button--compact mdc-card__action">DOWNLOAD</button>
+    <button class="mdc-button mdc-button--compact mdc-card__action">READ MORE</button>
+  </section>
+
+</section>
+
+<section class="mdc-card my-small-card">
+<section class=" mdc-card_media my-media-card_small">
+<h1 class="mdc-card_title mdc-card__title--large">How to read</h1>
+</section>
+ </section>
+   <section class="mdc-card__actions">
+    <button class="mdc-button mdc-button--compact mdc-card__action">DOWNLOAD</button>
+  </section>
+
+</section>
+
+  <div class="card mediumcard">
+    <img src="Material-design-2.jpg" alt="Avatar" >
+    <div class="container">
+      HANUMAN CHALISA
+    </div>
+    <div class="subtext">
+      The Hanuman Chalisa is a Hindu devotional hymn addressed to Hanuman.<br>
+    </div>
+    <button class="btn" type="button"><span>BUTTON</span></button>
+    </div>
+
+    <div class="card mediumcard">
+      <img src="Material-design-3.jpg" alt="Avatar" >
+      <div class="container">
+        HANUMAN CHALISA
+      </div>
+      <div class="subtext">
+        The Hanuman Chalisa is a Hindu devotional hymn addressed to Hanuman.<br>
+        It is traditionally believed to have been authored by 16th-century poet
+        Tulsidas in the Awadhi language,  <br> test <br>
+      </div>
+      </div>
+        <div class="card smallcard">
+          <img src="Material-design-1.jpg" alt="Avatar" >
+          <div class="container">
+            HANUMAN CHALISA
+          </div>
+          <div class="subtext">
+            The Hanuman Chalisa is a Hindu devotional hymn
+          </div>
+          </div>
+          <div class="card smallcard">
+            <img src="Material-design-2.jpg" alt="Avatar" >
+            <div class="container">
+              HANUMAN CHALISA
+            </div>
+            <div class="subtext">
+              The Hanuman Chalisa is a Hindu devotional hymn
+            </div>
+            </div>
+            <div class="card smallcard">
+              <img src="Material-design-3.jpg" alt="Avatar" >
+              <div class="container">
+                HANUMAN CHALISA
+              </div>
+              <div class="subtext">
+                The Hanuman Chalisa is a Hindu devotional hymn
+              </div>
+              </div>
+
+
+</div>
 </body>
 </html>

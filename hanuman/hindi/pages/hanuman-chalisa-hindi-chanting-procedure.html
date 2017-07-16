@@ -1,1564 +1,280 @@
-<!doctype html>
-<html ⚡ lang="hi">
-<head>
-<meta charset="utf-8">
-<script async src="https://cdn.ampproject.org/v0.js"></script>
-<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
-<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-
-<!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
-<link rel="canonical" href="index.html">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black">
-<style amp-custom>
-body{font-family:'Roboto', sans-serif; font-size:14px; background-color:#FFFFFF;}
-
-.bg-teal-light{ background-color: #1abc9c; color:#FFFFFF}
-.bg-teal-dark{  background-color: #16a085; color:#FFFFFF}
-.border-teal-light{ border:solid 1px #1abc9c;}
-.border-teal-dark{  border:solid 1px #16a085;}
-.color-teal-light{ color: #1abc9c;}
-.color-teal-dark{  color: #16a085;}
-.bg-green-light{background-color: #2ecc71; color:#FFFFFF}
-.bg-green-dark{background-color: #2abb67; color:#FFFFFF}
-.border-green-light{border:solid 1px #2ecc71;}
-.border-green-dark{ border:solid 1px #2abb67;}
-.color-green-light{color: #2ecc71;}
-.color-green-dark{color: #2abb67;}
-.bg-blue-light{background-color: #3498db; color:#FFFFFF}
-.bg-blue-dark{background-color: #2980b9; color:#FFFFFF;}
-.border-blue-light{border:solid 1px #3498db;}
-.border-blue-dark{ border:solid 1px #2980b9;}
-.color-blue-light{color: #3498db;}
-.color-blue-dark{color: #2980b9;}
-.bg-magenta-light{background-color: #9b59b6; color:#FFFFFF}
-.bg-magenta-dark{background-color: #8e44ad; color:#FFFFFF}
-.border-magenta-light{border:solid 1px #9b59b6;}
-.border-magenta-dark{ border:solid 1px #8e44ad;}
-.color-magenta-light{color: #9b59b6;}
-.color-magenta-dark{color: #8e44ad;}
-.bg-night-light{background-color: #34495e; color:#FFFFFF}
-.bg-night-dark{background-color: #2c3e50; color:#FFFFFF}
-.border-night-light{border:solid 1px #34495e;}
-.border-night-dark{ border:solid 1px #2c3e50;}
-.color-night-light{color: #34495e;}
-.color-night-dark{color: #2c3e50;}
-.bg-yellow-light{background-color: #E67E22; color:#FFFFFF}
-.bg-yellow-dark{background-color: #e86f2a; color:#FFFFFF}
-.border-yellow-light{border:solid 1px #E67E22;}
-.border-yellow-dark{ border:solid 1px #F27935;}
-.color-yellow-light{color: #f1c40f;}
-.color-yellow-dark{color: #f39c12;}
-.bg-orange-light{background-color: #F9690E; color:#FFFFFF}
-.bg-orange-dark{background-color: #D35400; color:#FFFFFF}
-.border-orange-light{border:solid 1px #F9690E;}
-.border-orange-dark{ border:solid 1px #D35400;}
-.color-orange-light{color: #e67e22;}
-.color-orange-dark{color: #d35400;}
-.bg-red-light{background-color: #e74c3c; color:#FFFFFF}
-.bg-red-dark{background-color: #c0392b; color:#FFFFFF}
-.border-red-light{border:solid 1px #e74c3c;}
-.border-red-dark{ border:solid 1px #c0392b;}
-.color-red-light{color: #e74c3c;}
-.color-red-dark{color: #c0392b;}
-.bg-pink-light{background-color: #fa6a8e ; color:#FFFFFF}
-.bg-pink-dark{background-color: #FB3365 ; color:#FFFFFF}
-.border-pink-light{border:solid 1px #fa6a8e ;}
-.border-pink-dark{ border:solid 1px #FB3365 ;}
-.color-pink-light{color: #fa6a8e;}
-.color-pink-dark{color: #FB3365;}
-.bg-gray-light{background-color: #bdc3c7; color:#FFFFFF}
-.bg-gray-dark{background-color: #95a5a6; color:#FFFFFF}
-.border-gray-light{border:solid 1px #bdc3c7;}
-.border-gray-dark{ border:solid 1px #95a5a6;}
-.color-gray-light{color: #bdc3c7;}
-.color-gray-dark{color: #95a5a6;}
-.bg-white{background-color:#FFFFFF;}
-.color-white{color:#FFFFFF;}
-.border-white{border:solid 1px #FFFFFF;}
-.bg-black{background-color:#000000;}
-.color-black{color:#000000;}
-.border-black{border:solid 1px #000000;}
-
-/*Social Icons*/
-.facebook-bg{background-color:#3b5998; color:#FFFFFF;}
-.linkedin-bg{background-color:#0077B5; color:#FFFFFF;}
-.twitter-bg{background-color:#4099ff; color:#FFFFFF;}
-.google-bg{ background-color:#d34836; color:#FFFFFF;}
-.whatsapp-bg{ background-color:#34AF23; color:#FFFFFF;}
-.pinterest-bg{ background-color:#C92228; color:#FFFFFF;}
-.sms-bg{ background-color:#27ae60; color:#FFFFFF;}
-.mail-bg{ background-color:#3498db; color:#FFFFFF;}
-.dribbble-bg{ background-color:#EA4C89; color:#FFFFFF;}
-.tumblr-bg{ background-color:#2C3D52; color:#FFFFFF;}
-.reddit-bg{ background-color:#336699; color:#FFFFFF;}
-.youtube-bg{ background-color:#D12827; color:#FFFFFF;}
-.phone-bg{ background-color:#27ae60; color:#FFFFFF;}
-.skype-bg{ background-color:#12A5F4; color:#FFFFFF;}
-.facebook-color{    color:#3b5998;}
-.linkedin-color{    color:#0077B5;}
-.twitter-color{     color:#4099ff;}
-.google-color{      color:#d34836;}
-.whatsapp-color{    color:#34AF23;}
-.pinterest-color{   color:#C92228;}
-.sms-color{         color:#27ae60;}
-.mail-color{        color:#3498db;}
-.dribbble-color{    color:#EA4C89;}
-.tumblr-color{      color:#2C3D52;}
-.reddit-color{      color:#336699;}
-.youtube-color{     color:#D12827;}
-.phone-color{       color:#27ae60;}
-.skype-color{       color:#12A5F4;}
-
-/*Font Settings*/
-h1{ font-size:24px; line-height:34px; font-weight:500;}
-h2{ font-size:22px; line-height:32px; font-weight:500;}
-h3{ font-size:20px; line-height:30px; font-weight:500;}
-h4{ font-size:18px; line-height:28px; font-weight:500;}
-h5{ font-size:16px; line-height:26px; font-weight:500;}
-h6{ font-size:14px; line-height:22px; font-weight:800;}
-.ultrathin{font-weight:200;}
-.thin{font-weight:300;}
-.thiner{font-weight:400;}
-.boder{font-weight:600;}
-.bold{font-weight:700;}
-.ultrabold{font-weight:800;}
-.capitalize{text-transform: capitalize;}
-.italic{font-style: italic;}
-.small-text{font-size:12px; display:block;}
-.center-text{text-align:center; display:block;}
-.right-text{text-align:right;}
-.uppercase{text-transform: uppercase;}
-.boxed-text{width:80%; margin:0px auto 30px auto;}
-.round-image{border-radius:500px;}
-p a{display:inline;}
-
-/*Content Settings*/
-.content{padding:0px 20px 0px 20px}
-.container{margin-bottom:30px}
-.full-bottom{margin-bottom:25px}
-.no-bottom{margin-bottom:0px}
-.full-top{margin-top:25px}
-.half-bottom{margin-bottom:15px}
-.half-top{margin-top:15px}
-.quarter-bottom{margin-bottom:15px}
-.hidden{display:none}
-.left-column{width:45%; margin-right:5%; float:left}
-.right-column{width:45%; margin-left:5%; float:left}
-.one-third-left{float:left; width:29%;  margin-right:1%}
-.one-third-center{float:left; width:29%; margin-left:5%; margin-right:5%}
-.one-third-right{float:left; width:29%; margin-left:1%}
-.clear{clear:both}
-
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	outline: none;
-	font-size-adjust: none;
-	-webkit-text-size-adjust: none;
-	-moz-text-size-adjust: none;
-	-ms-text-size-adjust: none;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-font-smoothing: antialiased;
-    -webkit-transform: translate3d(1,1,1);
-    transform:translate3d(1,1,1);
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>हनुमान चालीसा</title>
+    <link rel=”shortcut icon” href=”../resources/favicon.ico” type=”image/x-icon” />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-amber.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&amp;subset=devanagari" rel="stylesheet">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+ <style>
+ .mdl-grid.center-items {
+  justify-content: center;
 }
-
-div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code, pre {
-	display: block;
-	position:relative;
-}
-
-p{
-	line-height:30px;
-	font-weight:400;
-	color:#666666;
-	font-size:14px;
-	margin-bottom:30px;
-}
-
-a{text-decoration:none; color:#3498db;}
-
-/*Link Block*/
-
-.link-block{
-    height:50px;
-    line-height:50px;
-    font-size:14px;
-    color:#1f1f1f;
-    font-weight:400;
-    border-bottom:solid 1px rgba(0,0,0,0.1);
-}
-
-.link-block i{
-    position:absolute;
-    right:0px;
-    height:50px;
-    line-height:50px;
-}
-
-.border-top{border-top:solid 1px rgba(0,0,0,0.1);}
-
-/*Lists*/
-.icon-list{list-style:none; font-size:14px; line-height:28px; color:#666666;}
-.icon-list i{width:30px;}
-
-.center-icon{
-	width:80px;
-	height:80px;
-	border-radius:80px;
-	border:solid 1px rgba(0,0,0,0.5);
-	text-align:center;
-	line-height:80px;
-	font-size:24px;
-	margin:0px auto 30px auto;
-	display:block;
-}
-
-.decoration, .decoration-no-bottom{
-	height:1px;
-	background-color:rgba(0,0,0,0.1);
-}
-
-.decoration{margin-bottom:30px;}
-.decoration-margins{margin:0px 20px 30px 20px}
-
-header{
-	position:fixed;
-	height:59px;
-	background-color:#FFFFFF;
-	width:100%;
-	z-index:99999;
-    border-bottom:solid 1px rgba(0,0,0,0.1);
-}
-
-.header-icon-1, .header-icon-2{
-	position:absolute;
-	/* color:#1f1f1f; */
-	color:#ffffff;
-	line-height:60px;
-	text-align:center;
-	width:60px;
-	display:block;
-	font-size:24px; /** Moved from 14px to 24px  **/
-	background-color:transparent;
-}
-
-.header-icon-1{
-	right:0px;
-	top:0px;
-    border-left:dashed 1px rgba(0,0,0,0.05);
-}
-
-.header-icon-2{
-  /*  right:60px; */
-	  left:10px;
-    top:0px;
-    border-left:dashed 1px rgba(0,0,0,0.05);
-}
-
-.header-logo{
-/*	background-image:url(images/logo-small.png) ;*/
-  background-color: #B71C1C;
-	background-size:100px 60px;
-	/* width:100px; */
-	width:100%;
-	height:60px;
-	display:block;
-}
-.header-logo h1
+.template-leftalign-header.mdl-layout__header-row
 {
-	text-align: center;
-	color: #FFFFFF;
-	padding-top: 13px;  /** 60px-34px /2 **/
+  padding-left:4px;
 }
-.header-clear{
-	height:60px;
-}
-
-/*Footer*/
-
-.footer{
-    margin-bottom:30px;
-}
-
-.footer-logo{
-    width:150px;
-    height:40px;
-    background-image:url(images/logo.png);
-    background-repeat:no-repeat;
-    background-size:150px 40px;
-    margin:0px auto 20px auto;
-}
-
-.footer-socials a{
-    width:40px;
-    height:40px;
-    line-height:40px;
-    text-align:center;
-    color:#1f1f1f;
-    float:left;
-}
-
-.footer-socials{
-    width:200px;
-    height:30px;
-    margin:0 auto;
-}
-
-/*Homepage*/
-
-.caption{
-	position:absolute;
-	bottom:0px;
-	left:0px;
-	right:0px;
-	height:65px;
-	padding-left:20px;
-	padding-right:20px;
-	background-color:rgba(0,0,0,0.5);
-}
-
-.caption h4{
-	font-size:14px;
-	color:#FFFFFF;
-	line-height:20px;
-	margin-top:12px;
-}
-
-.caption h3{
-	color:#FFFFFF;
-	margin-bottom:5px;
-	font-size:16px;
-	padding-top:23px;
-	line-height:0px;
-}
-
-.caption p{
-	font-size:12px;
-	color:rgba(255,255,255,0.5);
-}
-
-.call-to-action a{
-	width:33.3%;
-	float:left;
-	text-align:center;
-	border-bottom:solid 1px rgba(0,0,0,0.1);
-	height:50px;
-	line-height:50px;
-	color:#1f1f1f;
-	font-size:12px;
-}
-
-.call-to-action a i{
-	padding-right:10px;
-}
-
-.social-icons{
-	width:150px;
-	margin:0 auto;
-}
-
-.social-round a{border-radius:50px;}
-
-.social-icons-small{
-	width:95px;
-	margin:0 auto;
-}
-
-.social-icons a{
-	line-height:40px;
-	width:40px;
-	height:40px;
-	margin-left:5px;
-	margin-right:5px;
-	float:left;
-}
-
-.social-icons-small a{
-	line-height:35px;
-	width:35px;
-	height:35px;
-	margin-left:5px;
-	margin-right:5px;
-	float:left;
-}
-
-/*Heading Block*/
-.heading-block{
-	padding:30px 20px;
-	margin-bottom:30px;
-}
-
-.heading-block h4{
-	position:relative;
-	z-index:10;
-	color:#FFFFFF;
-}
-
-.heading-block p{
-	position:relative;
-	z-index:10;
-	color:rgba(255,255,255,0.5);
-	margin-bottom:0px;
-}
-
-.heading-block a{
-	z-index:10;
-	width:100px;
-	height:30px;
-	line-height:30px;
-	color:#FFFFFF;
-	text-align:center;
-	font-size:12px;
-	margin:20px auto 0px auto;
-	border:solid 1px rgba(255,255,255,0.5);
-	border-radius:5px;
-    display:block;
-}
-
-.icon-heading h4{margin-bottom:5px}
-.icon-heading h4 i{
-	font-size:16px;
-	padding-right:20px;
-}
-
-.quote-style h4{
-	font-weight:300;
-	margin-left:40px;
-	margin-right:40px;
-	text-align:center;
-	line-height:40px;
-}
-
-.rating{
-	width:95px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-bottom:10px;
-	display:block;
-}
-
-
-.half-column-left .half-left-img{
-	position:absolute;
-	border-radius:150px;
-	margin-left:-50px;
-	left:0px;
-}
-
-.half-column-left{
-	padding-left:70px;
-	padding-right:20px;
-	min-height:110px;
-    overflow:hidden;
-}
-
-
-.half-column-right .half-right-img{
-	position:absolute;
-	border-radius:150px;
-	margin-right:-50px;
-	right:0px;
-}
-
-.half-column-right{
-	padding-right:70px;
-	padding-left:20px;
-	min-height:110px;
-    overflow:hidden;
-}
-
-/*Gallery*/
-
-.gallery-thumb{
-	width:31%;
-	float:left;
-	margin-bottom:3%;
-}
-.gallery-round .gallery-thumb{border-radius:100px}
-.gallery-wide .gallery-thumb-wide{margin-bottom:5px;}
-
-.gallery-thumb:nth-child(3n-1){
-	margin-left:3%;
-	margin-right:3%;
-}
-
-::-webkit-scrollbar { width: 0; }
-
-#sidebar{
-	width:240px;
-	background-color:#FFFFFF;
-    padding-top:40px;
-}
-
-.sidebar-header a{
-	width:50px;
-	float:left;
-    padding-top:60px;
-	line-height:60px;
-	color:#000000;
-	text-align:center;
-	border-bottom:solid 1px rgba(0,0,0,0.05);
-}
-
-.sidebar-logo{
-	background-image:url(images/sidebar-logo.png);
-	height:31px;
-	width:150px;
-	background-size:150px 31px;
-	display:block;
-	margin:25px 0px 25px 15px;
-}
-
-.sidebar-menu{margin-left:15px; margin-bottom:0px;}
-
-.sidebar-menu i{
-	font-size:14px;
-	width:35px;
-	height:35px;
-	line-height:35px;
-	text-align:center;
-	border-radius:35px;
-	margin-right:15px;
-}
-
-.sidebar-menu ul li a .fa-circle{font-size:4px; margin-left:1px;}
-.sidebar-menu .fa-circle, .sidebar-menu .fa-angle-down{
-	width:35px;
-	height:35px;
-	position:absolute;
-	right:0px;
-	top:14px;
-	font-size:4px;
-	color:#c9c9c9;
-}
-
-.sidebar-menu .fa-angle-down{font-size:12px;}
-
-.sidebar-menu section[expanded] .fa-angle-down{
-	transform:rotate(180deg);
-}
-
-.sidebar-menu h4{
-	background:none;
-	border:none;
-    color: #3a3a3a;
-    line-height: 60px;
-    font-size: 12px;
-}
-
-.sidebar-menu ul{
-	line-height:50px;
-	padding:10px 0px 20px 0px;
-}
-
-.sidebar-menu ul li a{
-	color:#6b757d;
-	font-size:11px;
-	line-height:50px;
-}
-
-.sidebar-menu i:first-child{
-	font-size:14px;
-}
-
-.sidebar-menu li a .fa-circle{margin-top:-5px;}
-
-.sidebar-divider{
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 20px;
-    margin-top:20px;
-    font-size: 10px;
-    padding-left: 20px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color:#495254;
-    border-bottom: solid 1px rgba(0,0,0,0.05);
-    border-top: solid 1px rgba(0,0,0,0.05);
-	line-height:40px;
-	margin-bottom:10px;
-}
-
-.sidebar-copyright{
-    margin-bottom:40px;
-}
-
-.sidebar-menu .sidebar-item{
-	color:#1f1f1f;
-	font-size:13px;
-	line-height:60px;
-}
-
-.active-menu, .active-item{
-    font-weight:600;
-    color:#000000;
-}
-
-.active-menu .fa-circle, .active-item .fa-circle{
-    color:#27ae60;
-    opacity:1;
-    font-size:8px;
-    margin-top:1px;
-}
-
-
-/*Splash Page*/
-.splash-content .splash-logo{
-	background-image:url(images/logo.png);
-	background-size:120px 35px;
-	width:120px;
-	height:35px;
-	margin:0px auto 20px auto;
-}
-
-.splash-content{
-	position:absolute;
-	width:240px;
-	height:350px;
-	left:50%;
-	top:50%;
-	margin-left:-120px;
-	margin-top:-175px;
-}
-
-.splash-button{
-	width:130px;
-	margin:0 auto;
-	text-align:center;
-	height:40px;
-	line-height:40px;
-	font-size:12px;
-}
-
-/*Landing Content*/
-.landing-content{
-	width:300px;
-	margin:30px auto 30px auto;
-	border-bottom:solid 1px rgba(255,255,255,0.1);
-}
-
-.landing-content a{
-	width:70px;
-	height:70px;
-	float:left;
-	margin:0px 15px 60px 15px;
-	border-radius:70px;
-	line-height:70px;
-	font-size:21px;
-	text-align:center;
-}
-
-.landing-content a em{
-	position:absolute;
-	font-size:14px;
-	width:70px;
-	text-align:center;
-	bottom:-60px;
-	left:0px;
-	right:0px;
-	font-style:normal;
-}
-
-/*Accordion Styles*/
-.accordion h4{
-	background-color:transparent;
-	border:none;
-}
-
-.accordion h4{
-	font-size:16px;
-	line-height:40px;
-}
-
-.accordion h4 i{
-	height:40px;
-	line-height:40px;
-	position:absolute;
-	right:0px;
-	font-size:12px;
-}
-
-.nested-accordion h4{
-	font-size:14px;
-}
-
-section[expanded] .fa-plus{	transform:rotate(45deg);}
-section[expanded] .fa-angle-down{	transform:rotate(180deg);}
-section[expanded] .fa-chevron-down{	transform:rotate(180deg);}
-
-/*Fonts*/
-.demo-icons a{
-	color:#FFFFFF;
-	width:20%;
-	height:50px;
-	float:left;
-}
-.demo-icons a i{
-	color:#1f1f1f;
-	font-size:21px;
-	width:50px;
-	height:50px;
-	float:left;
-	text-align:center;
-	overflow:hidden;
-}
-
-/*User Notifications*/
-.user-notification{
-	text-align:left;
-	padding-top:5px;
-	padding-left:10px;
-	padding-right:10px;
-	background-color:#27ae60;
-	height:50px;
-	color:#FFFFFF;
-	font-size:12px;
-	line-height:24px;
-	width:70%;
-	float:left;
-}
-
-.user-notification button{
-	background-color:#27ae60;
-	color:#FFFFFF;
-	height:55px;
-	position:fixed;
-	right:0px;
-	bottom:0px;
-	width:25%;
-}
-
-/*Dropcaps*/
-
-.dropcaps-1:first-letter{
-    float:left;
-    font-size:57px;
-	padding:14px 15px 0px 0px;
-    font-weight:800;
-    color:#1f1f1f;
-}
-
-.dropcaps-2:first-letter{
-    font-family: 'Times New Roman', sans-serif;
-    float:left;
-    font-size:42px;
-	padding:15px 15px 0px 0px;
-    font-weight:800;
-    color:#1f1f1f;
-}
-
-.dropcaps-3:first-letter{
-    background-color:#1f1f1f;
-	padding:10px 15px 10px 15px;
-	margin:5px 12px 0px 0px;
-    float:left;
-    font-size:24px;
-    font-weight:800;
-    color:#FFFFFF;
-}
-
-.dropcaps-4:first-letter{
-    font-family: 'Times New Roman', sans-serif;
-    font-weight:800;
-    background-color:#1f1f1f;
-	padding:8px 17px 8px 17px;
-	margin:5px 12px 0px 0px;
-    float:left;
-    font-size:20px;
-    font-weight:400;
-    color:#FFFFFF;
-}
-
-/*Highlights*/
-.highlight{margin-bottom:10px;}
-.highlight span{padding:3px 5px 3px 5px; margin-right:2px;}
-ol ul{	padding-left:5px;}
-ol, ul{line-height:24px; margin-left:20px;}
-.icon-list{list-style:none; margin-left:0px; padding-left:0px;}
-.icon-list i{font-size:10px;}
-.icon-list ul{list-style:none; padding-left:10px;}
-.icon-list ul ul{padding-left:10px;}
-
-/*Blockquotes*/
-.blockquote-1{border-left:solid 2px #1f1f1f; padding:5px 0px 5px 20px;}
-.blockquote-1 a{text-align:right; margin-top:-20px;  font-size:12px;}
-.blockquote-2 .blockquote-image{position:absolute; border-radius:50px;}
-.blockquote-2 h5{padding-left:60px;}
-.blockquote-2 .first-icon{padding-left:60px;}
-.blockquote-2 a{text-align:right; margin-top:-20px; font-size:12px;}
-.blockquote-3 .blockquote-image{width:150px; border-radius:150px; margin:0 auto; display:block;}
-.blockquote-3 h5{margin:10px 0px 10px 0px;}
-.blockquote-3 .ratings{width:100px; margin:10px auto 10px auto;}
-.blockquote-3 .ratings i{font-size:18px;}
-.blockquote-4 i{font-size:24px; position:absolute; margin-top:10px;}
-.blockquote-4 p{padding-left:50px;}
-
-/*Buttons*/
-.button{
-	display:inline-block;
-	padding:13px 20px;
-	margin:0px 0px 10px 20px;   /** top,right,bottom,left */
-	font-size:16px;
-}
-
-.news-box-item .button
+.template-layout-title_nonindex.mdl-layout-title
 {
-font-size:12px;
-margin:5px 0px 25px 0px;   /** top,right,bottom,left */
+  font-family: "Noto Sans Devanagari","Noto Sans", sans-serif;
+  font-weight: bold;
+  padding-left: 16px;
 }
-
-.button-round{border-radius:30px;}
-.button-full{display: block; text-align: center;}
-.button-center{width:100px; margin-left:auto; margin-right:auto; display:block; text-align:center;}
-.button:hover{opacity:0.9;}
-
-.icon-square, .icon-round{
-	width:40px;
-	height:40px;
-	line-height:40px;
-	text-align:center;
-	display:inline-block;
-	margin-left:6px;
-	margin-right:6px;
-	margin-bottom:10px;
-	font-size:14px;
+.material-icons.md1 {
+color: #fff;
 }
-.icon-square:hover, .icon-round:hover{opacity:0.9;}
-.icon-round{border-radius:45px;}
-
-/*Page 404*/
-.page-404 h1{font-size:60px; line-height:70px; margin-top:50px;}
-.page-soon h1{font-size:60px; line-height:70px; margin-top:50px;}
-.page-soon h6{font-size:24px;}
-
-/*Profile Page*/
-
-.profile-gradient{
-    background: -moz-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,0.95) 75%,rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,0.95) 75%,rgba(255,255,255,1) 100%);
-    background: linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0.95) 75%,rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',endColorstr='#ffffff',GradientType=0);
-    height: 250px;
-    margin-top: -235px;
-}
-
-.profile-overlay .profile-header{margin-top:-80px}
-.profile-header h1{font-size:30px;}
-.profile-header h6{letter-spacing:2px; opacity:0.5;}
-.profile-header h5{font-size:12px;}
-.profile-header i{margin-right:10px;}
-.profile-header p{font-size:18px;}
-.profile-followers a{float:left; width:33%; color:#1f1f1f; font-size:18px;}
-.profile-followers em{display:block; font-style:normal; font-size:12px;}
-.profile-thumb{margin-top:-50px; width:100px; margin-left:auto; margin-right:auto; display:block; border-radius:100px; border-radius:100px; border:solid 3px #FFFFFF;}
-
-/*Timeline 1*/
-
-.timeline-1{overflow:hidden; padding:20px }
-
-.timeline-1 .timeline-deco{
-	position:absolute;
-	top:0px;
-	left:50%;
-	width:1px;
-	bottom:0px;
-	background-color:rgba(0,0,0,0.15);
-}
-
-.timeline-1 .timeline-icon{
-	width:60px;
-	height:60px;
-	border-radius:60px;
-	line-height:60px;
-	text-align:center;
-	font-size:18px;
-	background-color:#FFFFFF;
-	border:solid 1px rgba(0,0,0,0.2);
-	margin:0px auto 30px auto;
-}
-
-.timeline-1 .container{background-color:#FFFFFF; padding:30px 0px 1px 0px}
-.timeline-2{overflow:hidden; padding:50px 20px 0px 20px; }
-
-.timeline-2 .timeline-deco{
-	position:absolute;
-	top:0px;
-	left:50px;
-	width:1px;
-	bottom:0px;
-	background-color:rgba(0,0,0,0.15);
-}
-
-.timeline-2 .timeline-icon{
-	width:40px;
-	height:40px;
-	border-radius:40px;
-	line-height:40px;
-	text-align:center;
-	font-size:18px;
-	background-color:#FFFFFF;
-	border:solid 1px rgba(0,0,0,0.2);
-	margin-left:10px;
-}
-
-.timeline-2 .container{
-	background-color:#FFFFFF;
-	margin-left:70px;
-	margin-top:-60px;
-	padding-bottom:30px;
-}
-
-/*Contact Page*/
-
-.contactField{
-	font-family:'Roboto', sans-serif;
-	height:40px;
-	line-height:40px;
-	line-height:100%;
-	width:100%;
-	display:block;
-	border:solid 1px rgba(0,0,0,0.1);
-	text-indent:10px;
-	font-size:13px;
-	transition:all 250ms ease;
-	margin-bottom:20px;
-}
-
-.contactField:focus{
-	border:solid 1px rgb(39, 174, 96);
-	transition:all 250ms ease;
-}
-
-.contactTextarea{
-	font-family:'Roboto', sans-serif;
-	padding-top:10px;
-	min-height:80px;
-	line-height:40px;
-	line-height:100%;
-	width:100%;
-	display:block;
-	border:solid 1px rgba(0,0,0,0.1);
-	text-indent:10px;
-	font-size:13px;
-	transition:all 250ms ease;
-	margin-bottom:30px;
-}
-
-.contactTextarea:focus{
-	transition:all 250ms ease;
-	border:solid 1px rgb(39, 174, 96);
-}
-
-.field-title{
-	font-size:13px;
-	margin-bottom:5px;
-}
-
-.field-title span{
-	font-size:10px;
-	color:#cacaca;
-	position:absolute;
-	right:0px;
-	margin-top:2px;
-}
-
-.buttonWrap{
-	width:100%;
-	display:block;
-	text-align:center;
-	margin-bottom:30px;
-    appearance:none;
-    -webkit-appearance:none;
-}
-
-.contact-icon{
-	color:#666666;
-	line-height:30px;
-}
-
-.contact-icon i{
-	color:#1f1f1f;
-	width:30px;
-}
-
-
-
-
-
-/*News Box*/
-
-.news-box{
-    background-image:url(images/pictures_vertical/bg0.jpg);
-    background-position:center center;
-    background-attachment: fixed;
-    padding-top:50px;
-    padding-bottom:50px;
-}
-
-.no-stack{
-    padding-top:20px;
-    padding-bottom:20px;
-}
-
-.full-post{
-    padding-bottom:0px;
-    padding-top:0px;
-}
-
-.full-post .news-box-content{
-    margin-left:0px;
-    margin-right:0px;
-}
-
-.news-stack-1,
-.news-stack-2,
-.news-stack-3,
-.news-stack-4,
-.news-stack-5,
-.news-stack-6,
-.news-stack-7,
-.news-stack-8{
-    border:solid 1px rgba(0,0,0,0.1);
-    position:absolute;
-    background-color:#FFFFFF;
-    height:5px;
-}
-
-.news-stack-1{
-    width:90%;
-    margin-top:-5px;
-    margin-left:5%;
-    z-index:10;
-}
-
-.news-stack-2{
-    width:86%;
-    margin-top:-10px;
-    margin-left:7%;
-    z-index:9;
-}
-
-.news-stack-3{
-    width:82%;
-    margin-top:-15px;
-    margin-left:9%;
-    z-index:8;
-}
-
-.news-stack-4{
-    width:78%;
-    margin-top:-20px;
-    margin-left:11%;
-    z-index:7;
-}
-
-.news-stack-5{
-    width:90%;
-    margin-left:5%;
-    z-index:9;
-}
-
-.news-stack-6{
-    width:86%;
-    margin-left:7%;
-    margin-top:5px;
-    z-index:8;
-}
-
-.news-stack-7{
-    width:82%;
-    margin-left:9%;
-    margin-top:10px;
-    z-index:7;
-}
-
-.news-stack-8{
-    width:78%;
-    margin-left:11%;
-    margin-top:10px;
-    z-index:6;
-}
-
-.news-box-content{
-    border:solid 1px rgba(0,0,0,0.1);
-    border-bottom:none;
-    background-color:#FFFFFF;
-    margin-left:10px;
-    margin-right:10px;
-    z-index:11;
-    padding:20px;
-    padding-bottom:10px;
-}
-
-.news-box-content .footer{
-    margin-top:50px;
-}
-
-.news-box-content-title{
-    font-size:23px;
-    font-weight:900;
-    padding-bottom:5px;
-}
-
-.news-box-content-sub p{
-    padding-bottom:0px;
-}
-
-.news-box-content-sub strong{
-    font-size:12px;
-    font-weight:400;
-}
-
-.news-box-content-sub a{
-    font-size:12px;
-    padding-left:5px;
-}
-
-.news-box-content-sub em{
-    display:block;
-    margin-top:-10px;
-    margin-bottom:-5px;
-    font-size:10px;
-    font-style:normal;
-    color:#9f9f9f;
-}
-
-/*News Header*/
-
-.news-header strong{
-    display:block;
-    color:#000000;
-    font-size:20px;
-    padding:10px 20px 10px 20px;
-    font-weight:500;
-}
-
-.news-header em{
-    color:#9b9b9b;
-    font-size:12px;
-    font-style: normal;
-    padding-left:20px;
-    padding-top:10px;
-    display:block;
-}
-
-.news-header u{
-    margin-left:20px;
-    margin-top:15px;
-    display:inline-block;
-    font-size:11px;
-    border-radius:10px;
-    height:15px;
-    padding:2px 10px 3px 10px;
-    text-decoration: none;
-}
-
-.news-header i{
-    float:right;
-    padding-right:20px;
-    padding-top:15px;
-    font-size:12px;
-    font-style:normal;
-    color:#cacaca;
-}
-
-.news-header i span{
-    padding-left:5px;
-    color:#2980b9;
-}
-
-.news-top .news-share{
-    margin-left:20px;
-    margin-right:20px;
-}
-
-.news-share p{
-    border-top:solid 1px rgba(0,0,0,0.1);
-    padding-top:10px;
-    margin-bottom:-9px;
-}
-
-.news-share h4{
-    background-color:transparent;
-    border:none;
-    width:40px;
-    height:40px;
-    display:block;
-    text-align:right;
-    font-size:14px;
-    line-height:38px;
-    position:absolute;
-    width:100%;
-    margin-top:-25px;
-}
-
-.custom-news-share{
-    background-color:transparent;
-    text-align:center;
-    line-height:40px;
-    color:#1f1f1f;
-}
-
-/*News Boxes*/
-
-.news-top-slider .amp-carousel-button{
-    background-color:rgba(255,255,255,0.5);
-    top:110px;
-}
-
-.news-box-item{
-    width:45%;
-    float:left;
-}
-
-.news-box-item amp-img{
-    border-radius:5px;
-}
-
-.news-boxes .news-box-item:nth-child(2n){
-    margin-left:10%;
-}
-
-.news-boxes .amp-carousel-button{
-    transform:scale(1, 1);
-    background-color:rgba(255,255,255,0.5);
-    top:50px;
-}
-
-.news-box-item u{
-    margin-left:0px;
-    margin-top:15px;
-    display:inline-block;
-    font-size:11px;
-    border-radius:10px;
-    height:15px;
-    padding:2px 10px 3px 10px;
-    text-decoration: none;
-}
-
-.news-box-item strong{
-    color:#1f1f1f;
-    font-size:15px;
-    display:block;
-    padding-top:10px;
-}
-.sachin
+.template_centre_button.mdl-button
 {
- color: #2196F3;
- font-size:20px;
- padding:10px 20px 10px 20px;
- font-weight:900;
+  position:relative;
+  font-family: "Noto Sans Devanagari","Noto Sans", sans-serif;
+  font-weight: bold;
 }
-.news-box-share h4{
-    background-color:transparent;
-    border:none;
-    font-size:14px;
-    text-align:right;
-    position:absolute;
-    margin-top:-21px;
-    padding-right:0px;
-    padding-bottom:10px;
-}
+ .fab-extendion
+ {
+   position:relative;
+ }
+ .template-card-wide.mdl-card {
+   width: 96%;
+   position:relative;
+   margin-left: 2%;
+   margin-right: 2%;
+   margin-top: 2%;
+   height:256px;
+ }
+ .template-card-small.mdl-card
+ {
+   position:relative;
+   width:100%;
+ }
+ .template-card-text.mdl-card
+ {
+   position:relative;
+   width:100%;
+   min-height: 80px;
 
-.news-box-item em{
-    font-size:12px;
-    color:#a0a0a0;
-    font-style: normal;
-    padding-top:10px;
-    margin-bottom:20px;
-    display:block;
-}
+  }
 
-.news-strip{
-    min-height:130px;
-}
+  .template-card-text-orange{background: #f44336;} /** Deep Orange */
+  .template-card-text-purple{background: #7b1fa2;}
+  .template-card-text-indigo{background: #283593;}
+  .template-card-text-blue{background: #1565c0;}
+  .template-card-text-teel{background: #00796b;}
+  img.article-image {
+    width: 100%;
+    height: auto;
+  }
+ .template-card-small > .mdl-card__title {
+   color: #fff;
+   height: 176px;
+ }
+ .template-card-small-background-benifits{background: url("HanumanChalisaBenifits004.jpg") center / cover; }
+ .template-card-small-background-process{background: url("HanumanChalisaAnusthaan001.jpg") center / cover; }
+ .template-card-title-text.mdl-card__title-text
+ {
+   font-family: "Noto Sans Devanagari","Noto Sans", sans-serif;
+   font-weight: bold;
+ }
+  .template-card-supporting-text.mdl-card__supporting-text
+ {
+   font-family: "Noto Sans Devanagari","Noto Sans", sans-serif;
 
-.news-strip amp-img{
-    position:absolute;
-    width:100px;
-    height:100px;
-    right:0px;
-    top:0px;
-    border-radius:10px;
-}
+ }
+ .template-card-text-text-supporting
+ {
+   color: #fff;
+ }
+ .template-card-text-text
+ {
+   font-family: "Noto Sans Devanagari","Noto Sans", sans-serif;
+   color: #fff;
+   text-align: center;
+   font-size:21px;
+   line-height: 20px;
 
-.news-strip strong{
-    padding-right:120px;
-    font-size:16px;
-    line-height:25px;
-    font-weight:900;
-    display:block;
-    color:#000000;
-}
+ }
 
-.news-strip u{
-    padding-top:20px;
-    display:block;
-    text-decoration:none;
-    font-size:12px;
-    color:#a0a0a0;
-}
+ .template-card-text-heading{padding-top: 8px; padding-bottom: 8px;}
+ .template-card-text-mantra{padding-bottom: 8px;}
 
-.news-strip .news-share{
-    padding:0px;
-}
-
-.news-strip h4 i{
-    padding-right:120px;
-}
-
-.news-strip p{
-    margin-top:20px;
-    border-bottom:solid 1px rgba(0,0,0,0.1);
-    margin-bottom:30px;
-}
-
-#contenttype
-{
-font-size:1.5em;
-font-weight: 800;
-color:#5F4B32;
-line-height:35px;
-text-align:center;
-}
-.spacing
+ .template-card-supporting-text-subheading
+ {
+   text-align: center;
+   font-size:21px;
+   line-height: 20px;
+ }
+ .spacing
 {
 padding-bottom:20px;
 }
-.contentmargin{
-	margin-left:20%;
-	margin-right:20%;
+.template-align-centre
+{
+  text-align: center;
 }
-@media screen and (max-width: 800px) {
-	.contentmargin{
-		margin-left:0%;
-		margin-right:0%;
-	}
-}
-#clkbenifits{ }
-#clkpocketdownload{ }
-#clktwitter{ }
-#clkfacebook{ }
-#clkwhatsapp{ }
+ /*** CSS structures for all main cards ***/
+ .template-card-wide-background {background: url("../resources/HanumanChalisaAnusthaan001.jpg") center / cover;}
 
-</style>
-<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-</head>
+ </style>
+ </head>
+ <body>
+ <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-
-<body>
-	<!-- AMP Analytics -->
-	<amp-analytics type="googleanalytics">
-	<script type="application/json">
-	{
-		"vars": {
-			"account": "UA-100886656-1"
-		},
-		"triggers": {
-			"trackPageview": {
-				"on": "visible",
-				"request": "pageview"
-			},
-			"trackClickOnHeader" : {
-				"on": "click",
-				"selector": "#clkpocketdownload",
-				"request": "event",
-				"vars": {
-					"eventCategory": "Pocketpdf",
-					"eventAction": "header-procedure"
-				}
-			},
-			"trackClickOnBenifits" : {
-				"on": "click",
-				"selector": "#clkbenifits",
-				"request": "event",
-				"vars": {
-					"eventCategory": "Benifits",
-					"eventAction": "header-procedure"
-				}
-			},
-
-			"trackClickOnTwitter" : {
-				"on": "click",
-				"selector": "#clktwitter",
-				"request": "event",
-				"vars": {
-					"socialNetwork": "twitter",
-					"socialAction": "tweet",
-					"socialTarget": "Procedure"
-				}
-			},
-			"trackClickOnFacebook" : {
-				"on": "click",
-				"selector": "#clkfacebook",
-				"request": "event",
-				"vars": {
-					"socialNetwork": "Facebook",
-					"socialAction": "Share",
-					"socialTarget": "Procedure"
-				}
-			},
-			"trackClickOnWhatsapp" : {
-				"on": "click",
-				"selector": "#clkwhatsapp",
-				"request": "event",
-				"vars": {
-					"socialNetwork": "Whatsapp",
-					"socialAction": "Share",
-					"socialTarget": "Benifits"
-				}
-			},
-		"scrollPings": {
-		 "on": "scroll",
-		 "scrollSpec": {
-			 "verticalBoundaries": [25, 50, 90],
-			 "horizontalBoundaries": [90]
-		 },
-		 "request": "event",
-		 "vars": {
-			 "eventId": "scroll"
-		 }
-	 }
-		}
-	}
-	</script>
-	</amp-analytics>
-	<!--  AMP Analytics --->
-
-	<header>
-		<div class="header-logo">
-     <h1> हनुमान चालीसा </h1>
-	 </div>
-	 <!---
-		 <button class="header-icon-2" on='tap:sidebar.toggle'><i class="fa fa-arrow-left "></i></button>
-   --->
-
-		 <a href="hanuman-chalisa-hindi-index.html" class="header-icon-2">
-     <i class="material-icons">keyboard_backspace</i>
+   <header class="mdl-layout__header">
+     <div class="template-leftalign-header mdl-layout__header-row">
+       <a href="index.html">
+       <i class="material-icons md1">arrow_back</i>
      </a>
-	 </header>
-	<div class="header-clear"></div>
+       <!-- Title -->
+       <span class="template-layout-title_nonindex mdl-layout-title">हनुमान चालीसा जप से अधिकतम लाभ कैसे प्राप्त करें? </span>
+       <!-- Add spacer, to align navigation to the right -->
+       <div class="mdl-layout-spacer"></div>
+       <!-- Navigation. We hide it in small screens. -->
+       <nav class="mdl-navigation mdl-layout--large-screen-only">
+         <a class="mdl-navigation__link" href="">Link</a>
+         <a class="mdl-navigation__link" href="">Link</a>
+         <a class="mdl-navigation__link" href="">Link</a>
+         <a class="mdl-navigation__link" href="">Link</a>
+       </nav>
+     </div>
+   </header>
+   <main class="mdl-layout__content">
+     <div class="page-content">
+       <div class="fab-extendion">
+       <div class="template-card-wide template-card-wide-background mdl-card mdl-shadow--1dp">
+     <!-- Accent-colored raised button with ripple -->
+       </div>
+       </div>
+       <div class="mdl-grid center-items">
+       <div class="mdl-cell mdl-cell--12-col">
+       <div class="template-card-text mdl-card mdl-shadow--1dp">
+         <div class="template-card-supporting-text mdl-card__supporting-text">
+          हम सभी, शब्दों को अपने विचार व्यक्त करने और हमारी जरूरतों को पूरा करनेए इस्तेमाल करते हैं,
+          एक दिन में करीब 15,000 शब्द बोलते हैं। <br>
+          मंत्र एक ध्वनि, शब्दांश,शब्द या वाक्यांश है,
+          जिसका उपयोग एक आध्यात्मिक अनुभव प्राप्त करने, एक लक्ष्य प्राप्त करने या खुद को बेहतर
+          बनाने के लिए अनुष्ठान करते हैं।<br>
+          हनुमान चालीसा एक मात्रा ऐसा मंत्र है जिसके सही अनुष्ठान से,
+          आरोग्य ,वीर्य, धनराषि और मुक्ति प्राप्त होते हैं।<br>
+          आइए हनुमान चालीसा जप से लाभ प्राप्त करने का सबसे अच्छा तरीका समझें
+         </div>
+       </div>
+       </div> <!-- CARD LAYOUT -->
 
-<div class="contentmargin">
-    <div class="news-top half-bottom">
-        <div class="news-header">
-            <amp-img src="../resources/HanumanAnusthaan600120.jpg" layout="responsive" width="600" height="120" alt="img"></amp-img>
-            <strong> हम सभी, शब्दों को अपने विचार व्यक्त करने और हमारी जरूरतों को पूरा करनेए इस्तेमाल करते हैं, एक दिन में करीब 15,000 शब्द बोलते हैं।
-मंत्र एक ध्वनि, शब्दांश,शब्द या वाक्यांश है, जिसका उपयोग एक आध्यात्मिक अनुभव प्राप्त करने, एक लक्ष्य प्राप्त करने या खुद को बेहतर बनाने के लिए अनुष्ठान करते हैं।
-हनुमान चालीसा एक मात्रा ऐसा मंत्र है जिसके सही अनुष्ठान से, आरोग्य ,वीर्य, धनराषि और मुक्ति प्राप्त होते हैं.
-आइए हनुमान चालीसा जप से लाभ प्राप्त करने का सबसे अच्छा तरीका समझें
-</strong>
-						<!---  <em>2 hours ago</em> --->
-        </div>
-    </div>
+        <div class="mdl-cell mdl-cell--8-col">
+        <div class="template-card-text template-card-text-purple mdl-card mdl-shadow--2dp">
+          <div class="template-card-supporting-text template-card-text-text-supporting mdl-card__supporting-text">
+            <p>
+              <div class="template-card-text-heading template-card-text-text">
+                 वैज्ञानिक अनुष्ठान विधि
+              </div>
+           </p>
+           <p>
+             <div class="template-card-text-mantra template-card-text-text">
+               ॐ हनुमते नमः।
 
-    <div class="content">
-        <div class="decoration"></div>
-		</div>
-
-		<div class="news-top half-bottom">
-			 <div class="news-header">
-						<u class="bg-blue-dark">अनुष्ठान विधि </u>
-						<strong>
-							<div class = "mantra-text">
-							<b> तुह्मरे भजन राम को पावै । </b>
-							<article><b>जनम जनम के दुख बिसरावै ॥</b></article>
-							</div>
-							<br>
-							<div class="para">
-							1. आप जप करने से पहले अपनी मनोकामना के  बारें में सोचे, और हनुमान जी से उसकी पूर्ति
-              की प्रार्थना करें। <br>
-              हम जो सोचते हैं और महसूस करते हैं वह एक शक्ति है, जो ब्रह्माण्ड से जुड़कर  उसी  तरह  के
-              घटनाओं और परिस्थितियों में हमें वापस आकर्षित करता है । <br>
-              यदि व्यक्ति सकारात्मक सोचता है और सकारात्मक महसूस करता है, तो वे सकारात्मक
-              घटनाओं और परिस्थितियों को वापस आकर्षित करते हैं । <br>
-             इसीलिए यह जरूरी है की आप अपनी मनोकामना के बारे में स्पष्ट तरह से कल्पना करें,
-             और हनुमान जी से उसकी पूर्ति की प्रार्थना करें। इसे मंत्र का अनुष्ठान कहते हैं । <br>
-
-							2. आपको एक दिन में कम से कम एक बार हनुमान चालीसा का जप करना  चाहिए । <br>
-              श्री तुलसीदास जी का कहना है कि, जब तक आप हनुमान चालीसा का १०० बार पठन पूरी करेंगे
-              उससे पहले ही हनुमान जी संतुष्ट होकर आपको वर प्रदान करेंगे <br>
-                    जो सत बार पाठ कर कोई ।
+           </div>
+          </p>
+          1.आप जप करने से पहले अपनी मनोकामना के बारें में सोचे, और हनुमान जी से उसकी पूर्ति
+          की प्रार्थना करें। <br><br>
+          हम जो सोचते हैं और महसूस करते हैं वह एक शक्ति है, जो ब्रह्माण्ड से जुड़कर उसी तरह के
+          घटनाओं और परिस्थितियों में हमें वापस आकर्षित करता है ।
+          यदि व्यक्ति सकारात्मक सोचता है और सकारात्मक महसूस करता है, तो वे सकारात्मक घटनाओं और परिस्थितियों को वापस
+          आकर्षित करते हैं । <br>
+          इसीलिए यह जरूरी है की आप अपनी मनोकामना के बारे में स्पष्ट तरह से कल्पना करें,
+          और हनुमान जी से उसकी पूर्ति की प्रार्थना करें।<br>
+          इसे मंत्र का अनुष्ठान कहते हैं । <br><br>
+          2. आपको एक दिन में कम से कम एक बार हनुमान चालीसा का जप करना चाहिए ।<br><br>
+            श्री तुलसीदास जी का कहना है कि, जब तक आप हनुमान चालीसा का १०० बार पठन पूरी
+            करेंगे उससे पहले ही हनुमान जी संतुष्ट होकर आपको वर प्रदान करेंगे<br><br>
+            <p align="center">
+                    जो सत बार पाठ कर कोई ।<br>
                     छूटहि बन्दि महा सुख होई ॥३८॥
-
-
-							3. सुबह नहाने के बाद और रात में सोने से पहले <br>
-               "  ॐ नमो हनुमते नमः ॥" <br>बीज मंत्र का पठन करें.
-               यह आप १८,२७,१०८ बार कर सकते हैं <br>
-
-							4. व्रत के पूरा समय आप शुद्ध शाकाहारी रहोगे तो अच्छा है,
-                 अगर आदत से मजबूर हैं तो मंगलवार और शनिवार मांसाहार त्याग दें <br>
-
-							6.यदि आपको अज्ञात भय हो और रात में उनकी चिंता हो रही हो<br>
-               तो अपने हाथ और चेहरे को धो लें और चालीसा को एक बार पठन करें ।
-               सभी अज्ञात भय दूर हो जाएंगे <br>
-                आप के सभी मनोकामनाएं पूरी हों. <br>
-                    हनुमते नमः<br>
-
-
-		</div>
-		</strong>
-		 </div>
-				<div class="news-share">
-						<section>
-						<!--    <h4><i class="fa fa-retweet"></i></h4> -->
-								<p>
-										<amp-social-share id="clkfacebook" type="facebook" data-param-app_id="1002609923206893"
-										data-param-href="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html" width="43" height="40">
-
-											</amp-social-share>
-										<amp-social-share id="clktwitter" type="twitter" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
-										width="43" height="40">
-											</amp-social-share>
-										<amp-social-share id="clkwhatsapp" type="whatsapp" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
-										width="43" height="40">
-											</amp-social-share>
-							 </p>
-						</section>
-				</div>
-		</div>
-		<div class="content">
-				<div class="decoration"></div>
-		</div>
-
-		<div class="content">
-        <div class="news-boxes full-bottom">
-						<div class="news-box-item">
-                <amp-img src="../resources/HanuamnChalisaPocketpdf200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                <u class="bg-blue-dark">अनुष्ठान </u>
-                <strong>हनुमान चालीसा अनुष्ठान प्रथा </strong>
-							<a id="clkpocketdownload" href="hanuman-chalisa-hindi-download.html" class="button bg-blue-light">आगे पढ़ें</a>
-            </div>
-            <div class="news-box-item">
-                <amp-img src="../resources/HanumanChalisaChamatkaar200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                <u class="bg-green-dark"> हनुमान चालीसा का महत्व </u>
-                <strong>हनुमान चालीसा के अद्भुत फ़ायदे </strong>
-					   <a href="hanuman-chalisa-hindi-benifits.html"
-						class="button bg-blue-light">आगे पढ़ें</a>
-            </div>
-            </div>
-
-						<div class="footer">
-								<div class="footer-socials">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-										<a href="#"><i class="fa fa-envelope-o"></i></a>
-										<a href="#"><i class="fa fa-chevron-up"></i></a>
-										<div class="clear"></div>
-								</div>
-						</div>
-            <div class="clear"></div>
+            </p><br>
+            3. सुबह नहाने के बाद और रात में सोने से पहले<br>
+            <p align="center">
+                    " ॐ नमो हनुमते नमः ॥"
+            </p>
+               बीज मंत्र का पठन करें. यह आप १८,२७,१०८ बार कर सकते है <br><br>
+            4. व्रत के पूरा समय आप शुद्ध शाकाहारी रहोगे तो अच्छा है, अगर आदत से मजबूर हैं तो
+                  मंगलवार और शनिवार मांसाहार त्याग दें ।<br><br>
+            5.यदि आपको अज्ञात भय हो और रात में उनकी चिंता हो रही हो
+              तो अपने हाथ और चेहरे को धो लें और चालीसा को एक बार पठन करें ।
+                    सभी अज्ञात भय दूर हो जाएंगे।<br><br>
+                    आप के सभी मनोकामनाएं पूरी हों.
+                    <p align="center">
+                    हनुमते नमः॥
+                    </p>
         </div>
 
-</div>
+          </div>
+         </div> <!-- CARD LAYOUT -->
+      </div> <!-- MDL GRID -->
+      <section class="section--center mdl-grid site-max-width">
+        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+                <img class="article-image" src="../resources/hanuman-ji-wallpaper300-200.jpg" border="0" alt="">
+            </div>
+            <div class="mdl-card__title">
+                <h2 class=" template-card-title-text mdl-card__title-text">हनुमान चालीसा के ५ बड़े लाभ। </h2>
+            </div>
+            <div class="template-card-supporting-text mdl-card__supporting-text">
+             हनुमान चालीसा गोस्वामी तुलसीदास जी की उल्लेखनीय काव्य रचनाओं में से एक है।
+             हनुमान चालीसा का हिंदू धर्म में एक विशेष स्थान एवं महत्त्व है।<br>
+             ऐसा माना जाता है कि हनुमान चालीसा के जाप से पवनपुत्र हनुमान जी को शीघ्र संतुष्ट कर सकते हैं
+             और उनका आशीर्वाद प्राप्त कर सकते हैं।
+            </div>
+            <div class="mdl-card__actions  mdl-card--border">
+              <a href="HanumanChalisaAnusthaan.html" class="mdl-button template_centre_button mdl-button--colored
+              mdl-js-button mdl-js-ripple-effect mdl-button--primary">जानिये ५ लाभ </a>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+                <img class="article-image" src="../resources/HanumanChalisaAnusthaan356-200.jpg" border="0" alt="">
+            </div>
+            <div class="mdl-card__title">
+                <h2 class="template-card-title-text mdl-card__title-text">जप से अधिकतम लाभ कैसे प्राप्त करें?</h2>
+            </div>
+            <div class="template-card-supporting-text mdl-card__supporting-text">
+             मंत्र पवित्र शब्द होते हैं और उनमें आपके जीवन को बदलने की शक्ति होती है।
+             वे एक बीज की तरह हैं जिसका नियमित रुप से जाप और प्रथा के साथ पोषण किया जाना चाहिए।
+             मंत्र का जाप आपकी चेतना को प्रभावित करने की एक सूक्ष्म प्रक्रिया है।<br>
+             जानिये दुनिया के सबसे शक्तिशाली मंत्र का पाठ कैसे करें।
+            </div>
+            <div class="mdl-card__actions  mdl-card--border">
+              <a href="HanumanChalisaAnusthaan.html" class="template_centre_button mdl-button  mdl-button--colored
+              mdl-js-button mdl-js-ripple-effect mdl-button--primary">वैज्ञानिक जप विधि </a>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+                <img class="article-image" src="../resources/HanumanWallpaper3.jpg" border="0" alt="">
+            </div>
+            <div class="mdl-card__title">
+                <h2 class=" template-card-title-text mdl-card__title-text">महा काय हनुमान</h2>
+            </div>
+            <div class="template-card-supporting-text mdl-card__supporting-text">
+              HD  वॉलपेपर<br>
+              Size: 1.3MB<br>
+              Resolution: 1024*720<br>
+            </div>
+            <div class="mdl-card__actions  mdl-card--border">
+              <a href="HanumanChalisaAnusthaan.html" class="template_centre_button mdl-button  mdl-button--colored
+              mdl-js-button mdl-js-ripple-effect mdl-button--primary">डाउनलोड </a>
+            </div>
+        </div>
+    </section>
+       </div> <!-- PAGE CONTENT -->
+       <footer class="mdl-mini-footer">
+         <div class="mdl-mini-footer__left-section">
+           <div class="mdl-logo">Title</div>
+           <ul class="mdl-mini-footer__link-list">
+             <li><a href="#">Privacy & Terms</a></li>
+           </ul>
+         </div>
+       </footer>
+ </main>
 </body>
 </html>

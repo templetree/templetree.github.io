@@ -1,20 +1,31 @@
 <!doctype html>
-<html ⚡>
+<html ⚡ lang="hi">
 <head>
 <meta charset="utf-8">
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
-<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-<script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
-<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-	<!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
-<link rel="canonical" href="index.html">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+<!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
+<link rel="canonical" href="http://www.hindudharm.in/hanuman/hindi/pages/hanuman-chalisa-hindi-index.html">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- for Facebook -->
+<meta property="og:title" content="हनुमान चालीसा के ५ बड़े फायदे" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content= "http://www.hindudharm.in/hanuman/hindi/resources/HanumanFacebookIndex.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="300" />
+<meta property="og:image:height" content="200" />
+<meta property="og:url" content="http://www.hindudharm.in/hanuman/hindi/pages/hanuman-chalisa-hindi-benifits.html" />
+<meta property="og:description" content="ऐसी मान्यता है कि, कलियुग में एक मात्र हनुमान जी ही जीवित देवता हैं।
+                                         यह अपने भक्तों और आराधकों पर सदैव कृपालु रहते हैं और उनकी हर इच्छा पूरी करते हैं ।
+                                          जानिए हनुमान चालीस के ५ बड़े फायदे । " />
+<meta property="og:site_name" content="संपूर्ण हनुमान चालीसा अनुष्ठान विधि के साथ "/>
+<meta property="fb:app_id" content="1002609923206893"/>
+
 <style amp-custom>
 body{font-family:'Roboto', sans-serif; font-size:14px; background-color:#FFFFFF;}
 
@@ -31,7 +42,7 @@ body{font-family:'Roboto', sans-serif; font-size:14px; background-color:#FFFFFF;
 .color-green-light{color: #2ecc71;}
 .color-green-dark{color: #2abb67;}
 .bg-blue-light{background-color: #3498db; color:#FFFFFF}
-.bg-blue-dark{background-color: #2980b9; color:#FFFFFF;}
+.bg-blue-dark{background-color: #2980b9; color:#FFFFFF}
 .border-blue-light{border:solid 1px #3498db;}
 .border-blue-dark{ border:solid 1px #2980b9;}
 .color-blue-light{color: #3498db;}
@@ -114,19 +125,6 @@ body{font-family:'Roboto', sans-serif; font-size:14px; background-color:#FFFFFF;
 .youtube-color{     color:#D12827;}
 .phone-color{       color:#27ae60;}
 .skype-color{       color:#12A5F4;}
-
-/*Background Images*/
-.bg-1{background-image:url(images/pictures/1.jpg)}
-.bg-2{background-image:url(images/pictures/2.jpg)}
-.bg-3{background-image:url(images/pictures/3.jpg)}
-.bg-4{background-image:url(images/pictures/4.jpg)}
-.bg-5{background-image:url(images/pictures/5.jpg)}
-.bg-6{background-image:url(images/pictures/6.jpg)}
-.bg-7{background-image:url(images/pictures/7.jpg)}
-.bg-8{background-image:url(images/pictures/8.jpg)}
-.bg-9{background-image:url(images/pictures/9.jpg)}
-.bg-body{background-image:url(images/pictures_vertical/bg2.jpg)}
-.overlay{background-color:rgba(0,0,0,0.8); position:absolute; top:0px; right:0px; bottom:0px; left:0px;}
 
 /*Font Settings*/
 h1{ font-size:24px; line-height:34px; font-weight:500;}
@@ -258,12 +256,13 @@ header{
 
 .header-icon-1, .header-icon-2{
 	position:absolute;
-	color:#1f1f1f;
+	/* color:#1f1f1f; */
+	color:#ffffff;
 	line-height:60px;
 	text-align:center;
 	width:60px;
 	display:block;
-	font-size:14px;
+	font-size:24px; /** Moved from 14px to 24px  **/
 	background-color:transparent;
 }
 
@@ -274,19 +273,27 @@ header{
 }
 
 .header-icon-2{
-    right:60px;
+  /*  right:60px; */
+	  left:10px;
     top:0px;
     border-left:dashed 1px rgba(0,0,0,0.05);
 }
 
 .header-logo{
-	background-image:url(images/logo-small.png);
+/*	background-image:url(images/logo-small.png) ;*/
+  background-color: #B71C1C;
 	background-size:100px 60px;
-	width:100px;
+	/* width:100px; */
+	width:100%;
 	height:60px;
 	display:block;
 }
-
+.header-logo h1
+{
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 13px;  /** 60px-34px /2 **/
+}
 .header-clear{
 	height:60px;
 }
@@ -813,8 +820,14 @@ ol, ul{line-height:24px; margin-left:20px;}
 .button{
 	display:inline-block;
 	padding:13px 20px;
-	margin:0px 0px 25px 0px;
-	font-size:12px;
+	margin:0px 0px 10px 20px;   /** top,right,bottom,left */
+	font-size:16px;
+}
+
+.news-box-item .button
+{
+font-size:12px;
+margin:5px 0px 25px 0px;   /** top,right,bottom,left */
 }
 
 .button-round{border-radius:30px;}
@@ -1140,7 +1153,7 @@ ol, ul{line-height:24px; margin-left:20px;}
     color:#000000;
     font-size:20px;
     padding:10px 20px 10px 20px;
-    font-weight:900;
+    font-weight:500;
 }
 
 .news-header em{
@@ -1182,6 +1195,12 @@ ol, ul{line-height:24px; margin-left:20px;}
     margin-right:20px;
 }
 
+.news-top .news-headline{
+
+	height:50%;
+	background-color: blue;
+
+}
 .news-share p{
     border-top:solid 1px rgba(0,0,0,0.1);
     padding-top:10px;
@@ -1252,7 +1271,13 @@ ol, ul{line-height:24px; margin-left:20px;}
     display:block;
     padding-top:10px;
 }
-
+.sachin
+{
+ color: #2196F3;
+ font-size:20px;
+ padding:10px 20px 10px 20px;
+ font-weight:900;
+}
 .news-box-share h4{
     background-color:transparent;
     border:none;
@@ -1316,129 +1341,328 @@ ol, ul{line-height:24px; margin-left:20px;}
     border-bottom:solid 1px rgba(0,0,0,0.1);
     margin-bottom:30px;
 }
-.adcontainer
+
+#contenttype
 {
-  margin-left:
+font-size:1.5em;
+font-weight: 800;
+color:#5F4B32;
+line-height:35px;
+text-align:center;
 }
+.spacing
+{
+padding-bottom:20px;
+}
+.mantra-text
+{
+	text-align: center;
+}
+.para{
+    display:block;
+    color:#000000;
+    font-size:18px;
+		word-spacing:10px;
+		line-height:30px;
+  /**  padding:10px 20px 10px 20px; **/
+    font-weight:580;
+}
+.contentmargin{
+	margin-left:20%;
+	margin-right:20%;
+}
+@media screen and (max-width: 800px) {
+	.contentmargin{
+		margin-left:0%;
+		margin-right:0%;
+	}
+}
+#clkprocedure{ }
+#clkpocketdownload{ }
+#clktwitter{ }
+#clkfacebook{ }
+#clkwhatsapp{ }
 </style>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 
 
-<body class="bg-body">
+<body>
+	<!-- AMP Analytics -->
+	<amp-analytics type="googleanalytics">
+	<script type="application/json">
+	{
+		"vars": {
+			"account": "UA-100886656-1"
+		},
+		"triggers": {
+			"trackPageview": {
+				"on": "visible",
+				"request": "pageview"
+			},
+			"trackClickOnHeader" : {
+				"on": "click",
+				"selector": "#clkpocketdownload",
+				"request": "event",
+				"vars": {
+					"eventCategory": "Pocketpdf",
+					"eventAction": "header-benifits"
+				}
+			},
+			"trackClickOnProcedure" : {
+				"on": "click",
+				"selector": "#clkprocedure",
+				"request": "event",
+				"vars": {
+					"eventCategory": "Procedure",
+					"eventAction": "header-benifits"
+				}
+			},
+
+			"trackClickOnTwitter" : {
+				"on": "click",
+				"selector": "#clktwitter",
+				"request": "event",
+				"vars": {
+					"socialNetwork": "twitter",
+					"socialAction": "tweet",
+					"socialTarget": "Benifits"
+				}
+			},
+			"trackClickOnFacebook" : {
+				"on": "click",
+				"selector": "#clkfacebook",
+				"request": "event",
+				"vars": {
+					"socialNetwork": "Facebook",
+					"socialAction": "Share",
+					"socialTarget": "Benifits"
+				}
+			},
+			"trackClickOnWhatsapp" : {
+				"on": "click",
+				"selector": "#clkwhatsapp",
+				"request": "event",
+				"vars": {
+					"socialNetwork": "Whatsapp",
+					"socialAction": "Share",
+					"socialTarget": "Benifits"
+				}
+			},
+		"scrollPings": {
+		 "on": "scroll",
+		 "scrollSpec": {
+			 "verticalBoundaries": [25, 50, 90],
+			 "horizontalBoundaries": [90]
+		 },
+		 "request": "event",
+		 "vars": {
+			 "eventId": "scroll"
+		 }
+	 }
+		}
+	}
+	</script>
+	</amp-analytics>
+	<!--  AMP Analytics --->
+
 	<header>
-        <button class="header-icon-2" on='tap:sidebar.toggle'><i class="fa fa-navicon"></i></button>
-        <a href="contact.php" class="header-icon-1"><i class="fa fa-envelope-o"></i></a>
-	</header>
+		<div class="header-logo">
+     <h1> हनुमान चालीसा </h1>
+	 </div>
+			 <a href="hanuman-chalisa-hindi-index.html" class="header-icon-2">
+       <i class="material-icons">keyboard_backspace</i>
+   </a>
+	 </header>
 	<div class="header-clear"></div>
+  <div class="contentmargin">
+    <div class="news-top half-bottom">
+        <div class="news-header">
+            <amp-img src="../resources/HanumanChalisaChamatkar600120.jpg" layout="responsive" width="600" height="120" alt="img"></amp-img>
+            <strong>
+							<div class="para">
+							ऐसी मान्यता है कि, कलियुग में एक मात्र हनुमान जी ही जीवित देवता हैं।<br>
+							       यह अपने भक्तों और आराधकों पर सदैव कृपालु रहते हैं और उनकी हर
+										 इच्छा पूरी करते हैं । <br>
+										 हनुमान जी की कृपा से ही तुलसीदास जी को भगवान राम के
+										 दर्शन हुए थे। शिवाजी महाराज के गुरू समर्थ रामदास के बारे में भी कहा जाता
+										 है कि उन्हें हनुमान जी ने दर्शन दिए थे।
+									 </div>
+</strong>
+</div>
+				</div>
+				<div class="content">
+						<div class="decoration"></div>
+				</div>
+				<div class="news-top half-bottom">
+		       <div class="news-header">
+		            <u class="bg-blue-dark">
+									आर्थिक परेशानी से मुक्ति </u>
+		            <strong>
+									<div class = "mantra-text">
+									<b> अष्टसिद्धि नव निधि के दाता। </b>
+								  <article><b>अस बर दीन्ह जानकी माता ॥</b></article>
+									</div>
+									<br>
+									<div class="para">
+ हनुमान जी को अष्टसिद्घि और नव निधि के दाता कहा गया है। <br>
+ जो व्यक्ति नियमित रूप से हनुमान चालीसा का पाठ करता है। उसकी हर मनोकामना हनुमान जी पूरी करते हैं चाहे वह धन संबंधी इच्छा ही क्यों न हो।<br>
+ जब कभी भी आपको आर्थिक संकट का सामना करना पड़े ,मन में हनुमान जी का ध्यान करके हनुमान चालीसा का पाठ करना शुरू कर दीजिए।े<br>
+</div>
+</strong>
+		     </div>
 
-	<amp-sidebar id="sidebar" layout="nodisplay" side="left">
-        <p class="sidebar-divider">News Pages</p>
-		<div class="sidebar-menu">
-            <a href="index-news-2.php" class="sidebar-item"><i class="fa fa-newspaper-o"></i>News Front Slider<i class="fa fa-circle"></i></a>
-            <a href="index-news.php" class="sidebar-item"><i class="fa fa-newspaper-o"></i>News Front Static<i class="fa fa-circle"></i></a>
-			<a href="list-thumbs.php" class="sidebar-item"><i class="fa fa-th-large"></i>News List Thumbs<i class="fa fa-circle"></i></a>
-			<a href="list-strips.php" class="sidebar-item"><i class="fa fa-navicon"></i>News List Strips<i class="fa fa-circle"></i></a>
-			<a href="list-columns.php" class="sidebar-item"><i class="fa fa-th-list"></i>News List Columns<i class="fa fa-circle"></i></a>
-			<a href="post-stacked.php" class="sidebar-item"><i class="fa fa-sticky-note-o"></i>News Post Stack<i class="fa fa-circle"></i></a>
-			<a href="post-full.php" class="sidebar-item"><i class="fa fa-arrows-alt"></i>News Post Full<i class="fa fa-circle"></i></a>
-			<a href="post-boxed.php" class="sidebar-item"><i class="fa fa-stop"></i>News Post Boxed<i class="fa fa-circle"></i></a>
-		</div>
-		<p class="sidebar-divider full-bottom">Extra Pages</p>
-		<div class="sidebar-menu">
-            <a href="index-splash.php" class="sidebar-item active-menu"><i class="fa fa-star"></i>Splash<i class="fa fa-circle"></i></a>
-            <a href="index-landing.php" class="sidebar-item"><i class="fa fa-th"></i>Landing<i class="fa fa-circle"></i></a>
-			<a href="features.php" class="sidebar-item"><i class="fa fa-cog"></i>Features<i class="fa fa-circle"></i></a>
-		</div>
-        <amp-accordion class="sidebar-menu">
-			<section>
-				<h4><i class="fa fa-bolt"></i>AMP Media<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="amp-daily.php"><i class="fa fa-angle-right"></i>AMP Daily Motion<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-jwp.php"><i class="fa fa-angle-right"></i>AMP JWPlayer<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-soundcloud.php"><i class="fa fa-angle-right"></i>AMP SoundCloud<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-vimeo.php"><i class="fa fa-angle-right"></i>AMP Vimeo<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-youtube.php"><i class="fa fa-angle-right"></i>AMP YouTube<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-bolt"></i>AMP Social<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="amp-facebook.php"><i class="fa fa-angle-right"></i>AMP Facebook<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-twitter.php"><i class="fa fa-angle-right"></i>AMP Twitter<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-instagram.php"><i class="fa fa-angle-right"></i>AMP Instagram<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-pinterest.php"><i class="fa fa-angle-right"></i>AMP Pinterest<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-social.php"><i class="fa fa-angle-right"></i>AMP Social Share<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-bolt"></i>AMP Features<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="amp-accordion.php"><i class="fa fa-angle-right"></i>AMP Accordion<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-carousel.php"><i class="fa fa-angle-right"></i>AMP Carousel<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-fonts.php"><i class="fa fa-angle-right"></i>AMP Fonts<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-maps.php"><i class="fa fa-angle-right"></i>AMP Maps<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-lightbox.php"><i class="fa fa-angle-right"></i>AMP LightBox<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-list.php"><i class="fa fa-angle-right"></i>AMP List<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-social.php"><i class="fa fa-angle-right"></i>AMP Social Share<i class="fa fa-circle"></i></a></li>
-					<li><a href="amp-notifications.php"><i class="fa fa-angle-right"></i>AMP User Notifications<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-file-o"></i>Page Templates<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="page-404.php"><i class="fa fa-angle-right"></i>404 Page<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-soon.php"><i class="fa fa-angle-right"></i>Coming Soon<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-profile-1.php"><i class="fa fa-angle-right"></i>Profile Page 1<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-profile-2.php"><i class="fa fa-angle-right"></i>Profile Page 2<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-timeline-1.php"><i class="fa fa-angle-right"></i>Timeline Page 1<i class="fa fa-circle"></i></a></li>
-					<li><a href="page-timeline-2.php"><i class="fa fa-angle-right"></i>Timeline Page 2<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-camera"></i>Gallery<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="gallery-round.php"><i class="fa fa-angle-right"></i>Round<i class="fa fa-circle"></i></a></li>
-					<li><a href="gallery-square.php"><i class="fa fa-angle-right"></i>Squared<i class="fa fa-circle"></i></a></li>
-					<li><a href="gallery-wide.php"><i class="fa fa-angle-right"></i>Wide<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-			<section>
-				<h4><i class="fa fa-picture-o"></i>Portfolio<i class="fa fa-angle-down"></i></h4>
-			  	<ul>
-					<li><a href="portfolio-1.php"><i class="fa fa-angle-right"></i>One Item<i class="fa fa-circle"></i></a></li>
-					<li><a href="portfolio-2.php"><i class="fa fa-angle-right"></i>Two Items<i class="fa fa-circle"></i></a></li>
-					<li><a href="portfolio-selected.php"><i class="fa fa-angle-right"></i>Selected Item<i class="fa fa-circle"></i></a></li>
-				</ul>
-			</section>
-		</amp-accordion>
-		<div class="sidebar-menu">
-			<a href="contact.php" class="sidebar-item"><i class="fa fa-envelope"></i>Contact<i class="fa fa-circle"></i></a>
-		</div>
-        <p class="sidebar-divider">Let's get Social</p>
-		<div class="sidebar-menu">
-			<a href="https://twitter.com/iEnabled" class="sidebar-item"><i class="fa fa-facebook"></i>Facebook<i class="fa fa-circle"></i></a>
-			<a href="https://www.facebook.com/enabled.labs/" class="sidebar-item"><i class="fa fa-twitter"></i>Twitter<i class="fa fa-circle"></i></a>
-            <a href="https://plus.google.com/u/1/105775801838187143320" class="sidebar-item"><i class="fa fa-google-plus"></i>Google +<i class="fa fa-circle"></i></a>
-            <a href="tel:+123 456 7890" class="sidebar-item"><i class="fa fa-phone"></i>Call Us<i class="fa fa-circle"></i></a>
-            <a href="sms:+123 456 7890" class="sidebar-item"><i class="fa fa-comment-o"></i>Text Us<i class="fa fa-circle"></i></a>
-            <a href="contact.php" class="sidebar-item"><i class="fa fa-envelope-o"></i>Mail Us<i class="fa fa-circle"></i></a>
-        </div>
-        <p class="sidebar-divider sidebar-copyright">Copyright Here. All rights reserved.</p>
-	</amp-sidebar>
+		    </div>
+				<div class="content">
+						<div class="decoration"></div>
+				</div>
+				<div class="news-top half-bottom">
+		       <div class="news-header">
+		          <!--  <amp-img src="images/pictures/HanumanChalisaAnusthan1.jpg" layout="responsive" width="600" height="250" alt="img"></amp-img> -->
+		            <u class="bg-blue-dark">जब अनजाना भय डराए</u>
+		            <strong>
+									<div class = "mantra-text">
+									<b> भूत पिशाच निकट नहिं आवै । </b>
+								  <article><b>महाबीर जब नाम सुनावै ॥</b></article>
+									</div>
+									<br>
+									<div class="para">
+ इस दोहे से बताया गया है कि जो व्यक्ति नियमित हनुमान चालीसा का पाठ करता है,
+ उसके आस-पास भूत-पिशाच और दूसरी नकारात्मक शक्तियां नहीं आती हैं।<br>
+ हनुमान चालीसा का नियमित पाठ करने वाले व्यक्ति का मनोबल बढ़ जाता है और उसे किसी भी तरह का भय नहीं रहता है।<br>
+ अगर किसी को कोई अनजाना भय डरा रहा हो तो, उसे हर रात सोने से पहले हाथ पैर धोकर पवित्र मन से हनुमान चालीसा
+ का पाठ करना शुरू कर देना चाहिए। <br>
 
-	<div class="splash-content">
-		<a href="index.html" class="splash-logo"></a>
-		<h2 class="color-white center-text">Google AMP</h2>
-		<h6 class="color-gray-dark thin center-text half-bottom">Fast, simple, efficient</h6>
-		<p class="center-text color-gray-light">
-			Google AMP aims to simplify the way you use the internet. The biggest trend on the market!
-			All aboard!
-		</p>
-		<a href="/hanuman/hindi/pages/hanuman-chalisa-hindi-index" class="splash-button bg-red-dark">Welcome</a>
-	</div>
-                <!-- Begin BidVertiser code -->
-<SCRIPT data-cfasync="false" SRC="//bdv.bidvertiser.com/BidVertiser.dbm?pid=775753&bid=1892873" TYPE="text/javascript"></SCRIPT>
-<!-- End BidVertiser code -->
+</div>
+</strong>
+		     </div>
+
+		    </div>
+				<div class="content">
+						<div class="decoration"></div>
+				</div>
+
+				<div class="news-top half-bottom">
+					 <div class="news-header">
+							<!--  <amp-img src="images/pictures/HanumanChalisaAnusthan1.jpg" layout="responsive" width="600" height="250" alt="img"></amp-img> -->
+								<u class="bg-blue-dark">बल और वीर्यता केलिए </u>
+								<strong>
+									<div class = "mantra-text">
+									<b> नासै रोग हरै सब पीरा । </b>
+									<article><b>जपत निरन्तर हनुमत बीरा ॥</b></article>
+									</div>
+									<br>
+									<div class="para">
+			हनुमान जी परम पराक्रमी और महावीर हैं। इस बात का उल्लेख रामचरित मानस से लेकर हनुमान चालीसा तक में किया गया है।<br>
+			इनके ध्यान से पुरूष बलवान और वीर्यवान होता है।
+			जो लोग अक्सर बीमार रहते हैं या काफी उपचार के बाद भी जिनका रोग दूर नहीं होता उन्हें नियमित हनुमान चालीसा का पाठ करना चाहिए।<br>
+
+				</div>
+				</strong>
+				 </div>
+				</div>
+				<div class="content">
+						<div class="decoration"></div>
+				</div>
+				<div class="news-top half-bottom">
+					 <div class="news-header">
+							<!--  <amp-img src="images/pictures/HanumanChalisaAnusthan1.jpg" layout="responsive" width="600" height="250" alt="img"></amp-img> -->
+								<u class="bg-blue-dark">विद्या और बुद्धिमत्ता </u>
+								<strong>
+									<div class = "mantra-text">
+									<b> बिद्यावान गुणी अति चातुर । </b>
+									<article><b>राम-काज करिबे को आतुर ॥</b></article>
+									</div>
+									<br>
+									<div class="para">
+							आपने देखा होगा कि मंगलवार के दिन छात्र बड़ी संख्या में हनुमान जी के मंदिर में दर्शन के लिए आते हैं।
+							इसका कारण यह है कि हनुमान जी की जिनपर कृपा होती है वह बुद्घिमान, गुणी और चातुर यानी अक्लमंद हो जाते हैं।<br>
+							हनुमान जी की कृपा पाने के लिए छात्रों को नियमित हनुमान चालीसा का पाठ करना चाहिए।
+							छात्र जीवन में चालीसा का पाठ करने से स्मरण शक्ति बढ़ती है और शिक्षा के क्षेत्र में कामयाबी मिलती है।<br>
+				</div>
+				</strong>
+				 </div>
+						</div>
+						<div class="content">
+								<div class="decoration"></div>
+						</div>
+				<div class="news-top half-bottom">
+					 <div class="news-header">
+							<!--  <amp-img src="images/pictures/HanumanChalisaAnusthan1.jpg" layout="responsive" width="600" height="250" alt="img"></amp-img> -->
+								<u class="bg-blue-dark">मुक्ति </u>
+								<strong>
+									<div class = "mantra-text">
+									<b> तुह्मरे भजन राम को पावै । </b>
+									<article><b>जनम जनम के दुख बिसरावै ॥</b></article>
+									</div>
+									<br>
+									<div class="para">
+			हनुमान चालीसा पाठ का सबसे बड़ा लाभ है यह <br>
+			मनुष्य जीवन का परम लक्ष्य माना गया है मुक्ति यानी शरीर त्याग के बाद परमधाम में स्थान।
+			हनुमान चालीसा में बताया गया है<br> 'अन्त काल रघुबर पुर जाई।<br> जहाँ जन्म हरि–भक्त कहाई।।<br>
+			और देवता चित्त न धरई।<br> हनुमत् सेई सर्व सुख करई।।<br>
+			यानी जो व्यक्ति हनुमान जी का ध्यान करता है उनकी पूजा और हनुमान चालीसा का पाठ नियमित करता है
+			उसके परम धाम जाने का मार्ग सरल हो जाता है।<br>
+
+				</div>
+				</strong>
+				 </div>
+						<div class="news-share">
+								<section>
+								<!--    <h4><i class="fa fa-retweet"></i></h4> -->
+										<p>
+												<amp-social-share id="clkfacebook" type="facebook" data-param-app_id="1002609923206893"
+												data-param-href="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html" width="43" height="40">
+
+													</amp-social-share>
+												<amp-social-share id="clktwitter" type="twitter" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
+												width="43" height="40">
+													</amp-social-share>
+												<amp-social-share id="clkwhatsapp" type="whatsapp" data-param-url="https://templetree.github.io/hanuman-chalisa-hindi-benifits.html"
+												width="43" height="40">
+													</amp-social-share>
+									 </p>
+								</section>
+						</div>
+				</div>
+				<div class="content">
+						<div class="decoration"></div>
+				</div>
+
+
+		<div class="content">
+        <div class="news-boxes full-bottom">
+      <!--    <a href="gallery-square.html"> -->
+						<div class="news-box-item">
+                <amp-img src="../resources/HanumanChalisaAnusthaan200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
+                <u class="bg-green-dark">Chanting method</u>
+                <strong>हनुमान चालीसा अनुष्ठान प्रथा</strong>
+								<a id="clkprocedure" href="hanuman-chalisa-hindi-chanting-procedure.html"
+								class="button bg-blue-light" >आगे पढ़ें </a>
+					</div> <!-- News box --->
+
+            <div class="news-box-item">
+                <amp-img src="../resources/HanuamnChalisaPocketpdf200200.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
+                <u class="bg-green-dark">Pocket PDFr</u>
+                <strong>हनुमान चालीसा पॉकेट पीडीऍफ़ फॉर्मेट</strong>
+								<a id="clkpocketdownload" href="hanuman-chalisa-hindi-download.html"
+	 						 class="button bg-blue-light" >आगे पढ़ें </a>
+            </div> <!-- News Box item -->
+
+            <div class="clear"></div>
+        </div> <!-- News Boxes full bottom -->
+				<div class="footer">
+						<div class="footer-socials">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+								<a href="#"><i class="fa fa-envelope-o"></i></a>
+								<a href="#"><i class="fa fa-chevron-up"></i></a>
+								<div class="clear"></div>
+						</div>
+				</div>
+    </div> <!-- Content -->
+	</div> <!-- Content margin -->
+
 </body>
 </html>
