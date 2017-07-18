@@ -96,13 +96,30 @@ padding-bottom:20px;
    height: auto;
  }
  </style>
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100886656-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
  </head>
  <body>
  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
    <header class="mdl-layout__header">
      <div class="template-leftalign-header mdl-layout__header-row">
-       <a href="hanuman-chalisa-hindi-index.html">
+       <a href="hanuman-chalisa-hindi-index.html"
+       onClick= "ga('send', {
+      hitType: 'event',
+      eventCategory: 'Page',
+      eventAction: 'Click',
+      eventLabel: 'Mantra-Back'
+    }); "
+       >
        <i class="material-icons md1">arrow_back</i>
      </a>
        <!-- Title -->
@@ -124,7 +141,14 @@ padding-bottom:20px;
        <div class="template-card-wide template-card-wide-background mdl-card mdl-shadow--1dp">
      <!-- Accent-colored raised button with ripple -->
        </div>
-       <a href="HanumanChalisaPocketPDF.pdf" download >
+       <a href="HanumanChalisaPocketPDF.pdf" download
+       onClick= "ga('send', {
+      hitType: 'event',
+      eventCategory: 'Card',
+      eventAction: 'Download',
+      eventLabel: 'Mantra-Fab'
+    }); "
+       >
        <button class="template_centre_fab_button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect
        mdl-button--colored mdl-button--primary mdl-shadow--4dp">
        <i class="material-icons">arrow_downward</i></button>
@@ -148,7 +172,14 @@ padding-bottom:20px;
          तो चलिए आज से हनुमान चालीसा का पाठ शुरू करें।<br>
          </div>
          <div class="mdl-card__actions ">
-           <a class="template_centre_button mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+           <a href="HanumanChalisaPocketPDF.pdf" download
+           onClick= "ga('send', {
+          hitType: 'event',
+          eventCategory: 'Card',
+          eventAction: 'Download',
+          eventLabel: 'Mantra-Card'
+        }); "
+           class="template_centre_button mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
              डाउनलोड
            </a>
          </div>
@@ -256,7 +287,14 @@ padding-bottom:20px;
 
          </div>
          <div class="mdl-card__actions ">
-           <a class="template_centre_button mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+           <a href="HanumanChalisaPocketPDF.pdf" download
+           onClick= "ga('send', {
+          hitType: 'event',
+          eventCategory: 'Card',
+          eventAction: 'Download',
+          eventLabel: 'Mantra-CardEnd'
+        }); "
+           class="template_centre_button mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
              डाउनलोड
            </a>
          </div>
@@ -277,7 +315,14 @@ padding-bottom:20px;
               और उनका आशीर्वाद प्राप्त कर सकते हैं।
              </div>
              <div class="mdl-card__actions  mdl-card--border">
-               <a href="hanuman-chalisa-hindi-benifits.html" class="mdl-button template_centre_button mdl-button--colored
+               <a
+               onClick= "ga('send', {
+              hitType: 'event',
+              eventCategory: 'Card',
+              eventAction: 'Click',
+              eventLabel: 'Mantra-Benifits'
+            }); "
+               href="hanuman-chalisa-hindi-benifits.html" class="mdl-button template_centre_button mdl-button--colored
                mdl-js-button mdl-js-ripple-effect mdl-button--primary">जानिये ५ लाभ </a>
              </div>
          </div>
@@ -295,7 +340,14 @@ padding-bottom:20px;
               जानिये दुनिया के सबसे शक्तिशाली मंत्र का पाठ कैसे करें।
              </div>
              <div class="mdl-card__actions  mdl-card--border">
-               <a href="hanuman-chalisa-hindi-chanting-procedure.html" class="template_centre_button mdl-button  mdl-button--colored
+               <a
+               onClick= "ga('send', {
+              hitType: 'event',
+              eventCategory: 'Card',
+              eventAction: 'Click',
+              eventLabel: 'Mantra-Procedure'
+            }); "
+               href="hanuman-chalisa-hindi-chanting-procedure.html" class="template_centre_button mdl-button  mdl-button--colored
                mdl-js-button mdl-js-ripple-effect mdl-button--primary">वैज्ञानिक जप विधि </a>
              </div>
          </div>
@@ -312,7 +364,14 @@ padding-bottom:20px;
                Resolution: 1024*720<br>
              </div>
              <div class="mdl-card__actions  mdl-card--border">
-               <a href="HanumanChalisaAnusthaan.html" class="template_centre_button mdl-button  mdl-button--colored
+               <a
+               onClick= "ga('send', {
+              hitType: 'event',
+              eventCategory: 'Card',
+              eventAction: 'Download',
+              eventLabel: 'Mantra-Wallpaper1'
+            }); "
+               href="HanumanWallpaperDownload3.jpg" download class="template_centre_button mdl-button  mdl-button--colored
                mdl-js-button mdl-js-ripple-effect mdl-button--primary">डाउनलोड </a>
              </div>
          </div>
