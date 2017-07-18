@@ -18,14 +18,19 @@ a:hover, a:visited, a:link, a:active
     text-decoration: none;
 }
 .template-card-wide.mdl-card {
-  width: 98%;
+  width: 96%;
   position:relative;
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 2%;
-  height:290px;
+  height:256px;
 }
 .template-card-wide-background {background: url("../resources/Hanuman889.jpg") center / cover;}
+@media  screen and (max-width: 480px)
+{
+  .template-card-wide-background {background: url("../resources/Hanuman889-mobile.jpg") center / cover;}
+
+}
 .template_centre_button.mdl-button
 {
   position:relative;
@@ -80,6 +85,10 @@ img.article-image {
   width: 100%;
   height: auto;
 }
+.fab-extendion
+{
+  position:relative;
+}
 </style>
  </head>
 </body>
@@ -112,7 +121,8 @@ img.article-image {
   <main class="mdl-layout__content">
     <div class="page-content">
       <!-- Your content goes here -->
-      <div class="template-card-wide template-card-wide-background mdl-card mdl-shadow--1dp">
+      <div class="fab-extendion">
+      <div class="template-card-wide template-card-wide-background mdl-card mdl-cell--4-col-phone mdl-shadow--1dp">
 
     <!-- Accent-colored raised button with ripple -->
   <a href="hanuman-chalisa-hindi-download.html">
@@ -121,8 +131,9 @@ img.article-image {
                   margin-left:auto;margin-right:auto;margin-top:210px;margin-bottom:0%;display:block;">
         आगे पढ़ें
     </button>
-  </a>
+  </a> 
     </div>
+  </div>
 <div class="mdl-grid center-items">
   <div class="mdl-cell mdl-cell--4-col">
     <div class="template-card-small template-card-small-background-benifits  mdl-card mdl-shadow--4dp">
