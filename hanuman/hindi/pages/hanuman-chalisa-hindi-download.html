@@ -28,6 +28,7 @@
  {
    position:relative;
  }
+ /** Wide card **/
  .template-card-wide.mdl-card {
    width: 96%;
    position:relative;
@@ -35,6 +36,28 @@
    margin-right: 2%;
    margin-top: 2%;
    height:256px;
+ }
+ .template-card-wide-background {background: url("../resources/Hanuman889.jpg") center / cover;}
+ .template_centre_fab_button.mdl-button
+ {
+   position:relative;
+   font-family: 'Noto Sans', sans-serif;
+   font-weight: bold;
+   margin-top:-4%;
+   z-index: 1;
+   margin-left:85.87%;
+ }
+ @media  screen and (max-width: 480px)
+ {
+   .template-card-wide.mdl-card {
+     height:200px;
+   }
+   .template-card-wide-background {background: url("../resources/Hanuman889-mobile.jpg") center / cover;}
+   .template_centre_fab_button.mdl-button
+   {
+     margin-top:-10%;
+     margin-left:75%;
+   }
  }
  .template-card-small.mdl-card
  {
@@ -48,21 +71,18 @@
  .template-card-small-background-benifits{background: url("HanumanChalisaBenifits004.jpg") center / cover; }
  .template-card-small-background-process{background: url("HanumanChalisaAnusthaan001.jpg") center / cover; }
 
- .template_centre_fab_button.mdl-button
- {
-   position:relative;
-   font-family: 'Noto Sans', sans-serif;
-   font-weight: bold;
-   margin-top:-4%;
-   z-index: 1;
-   margin-left:85.87%;
- }
+
  .template_centre_button.mdl-button
  {
    position:relative;
    font-size: 1.5rem;
    font-family: "Noto Sans Devanagari","Noto Sans", sans-serif;
    font-weight: bold;
+ }
+ .template-card-title.mdl-card__title
+ {
+   padding-top: 8px;
+   padding-bottom: 8px;
  }
  .template-card-title-text.mdl-card__title-text
  {
@@ -74,6 +94,9 @@
    font-size: 1.3rem;
    line-height: 22px;
    font-family: "Noto Sans Devanagari","Noto Sans", sans-serif;
+   padding-top: 8px;
+   padding-bottom: 8px;
+
  }
  .template-card-supporting-text-subheading
  {
@@ -90,10 +113,15 @@ padding-bottom:20px;
   text-align: center;
 }
  /*** CSS structures for all main cards ***/
- .template-card-wide-background {background: url("../resources/Hanuman889.jpg") center / cover;}
  img.article-image {
    width: 100%;
    height: auto;
+ }
+ .template-footer.mdl-mini-footer
+ {
+   color: #fff;
+   background-color: #EF5350;
+   font-family: "Noto Sans Devanagari","Noto Sans", sans-serif;
  }
  </style>
  <script>
@@ -190,7 +218,7 @@ padding-bottom:20px;
          <div class="template-card-supporting-text mdl-card__supporting-text">
         <p>
         <div class="template-card-supporting-text-subheading">
-        मंत्र का उच्‍चारण महत्‍वपूर्ण है
+        श्री हनुमान चालीसा ॥
       </div>
     </p>
     <div class="template-align-centre">
@@ -305,14 +333,12 @@ padding-bottom:20px;
              <div class="mdl-card__media">
                  <img class="article-image" src="../resources/hanuman-ji-wallpaper300-201.jpg" border="0" alt="">
              </div>
-             <div class="mdl-card__title">
+             <div class="template-card-title mdl-card__title">
                  <h2 class=" template-card-title-text mdl-card__title-text">हनुमान चालीसा के ५ बड़े लाभ। </h2>
              </div>
              <div class="template-card-supporting-text mdl-card__supporting-text">
-              हनुमान चालीसा गोस्वामी तुलसीदास जी की उल्लेखनीय काव्य रचनाओं में से एक है।
-              हनुमान चालीसा का हिंदू धर्म में एक विशेष स्थान एवं महत्त्व है।<br>
-              ऐसा माना जाता है कि हनुमान चालीसा के जाप से पवनपुत्र हनुमान जी को शीघ्र संतुष्ट कर सकते हैं
-              और उनका आशीर्वाद प्राप्त कर सकते हैं।
+            ऐसा माना जाता है कि हनुमान चालीसा के जाप मात्रा से पवनपुत्र हनुमान जी को शीघ्र संतुष्ट
+            कर सकते हैं। जानिए इस मंत्र के ५ अद्भुत लाभ
              </div>
              <div class="mdl-card__actions  mdl-card--border">
                <a
@@ -330,13 +356,11 @@ padding-bottom:20px;
              <div class="mdl-card__media">
                  <img class="article-image" src="../resources/HanumanChalisaAnusthaan356-201.jpg" border="0" alt="">
              </div>
-             <div class="mdl-card__title">
+             <div class=" template-card-title mdl-card__title">
                  <h2 class="template-card-title-text mdl-card__title-text">जप से अधिकतम लाभ कैसे प्राप्त करें?</h2>
              </div>
              <div class="template-card-supporting-text mdl-card__supporting-text">
               मंत्र पवित्र शब्द होते हैं और उनमें आपके जीवन को बदलने की शक्ति होती है।
-              वे एक बीज की तरह हैं जिसका नियमित रुप से जाप और प्रथा के साथ पोषण किया जाना चाहिए।
-              मंत्र का जाप आपकी चेतना को प्रभावित करने की एक सूक्ष्म प्रक्रिया है।<br>
               जानिये दुनिया के सबसे शक्तिशाली मंत्र का पाठ कैसे करें।
              </div>
              <div class="mdl-card__actions  mdl-card--border">
@@ -353,13 +377,13 @@ padding-bottom:20px;
          </div>
          <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
              <div class="mdl-card__media">
-                 <img class="article-image" src="../resources/HanumanWallPaper3.jpg" border="0" alt="">
+                 <img class="article-image" src="../resources/Hanuman-with-mace-320-200.jpg" border="0" alt="">
              </div>
-             <div class="mdl-card__title">
-                 <h2 class=" template-card-title-text mdl-card__title-text">महा काय हनुमान</h2>
+             <div class=" template-card-title mdl-card__title">
+                 <h2 class=" template-card-title-text mdl-card__title-text">हनुमान  HD  वॉलपेपर</h2>
              </div>
              <div class="template-card-supporting-text mdl-card__supporting-text">
-               HD  वॉलपेपर<br>
+               ६ नए हनुमानजी   के HD  वॉलपेपर फ्री !<br>
                Size: 1.3MB<br>
                Resolution: 1024*720<br>
              </div>
@@ -368,17 +392,17 @@ padding-bottom:20px;
                onClick= "ga('send', {
               hitType: 'event',
               eventCategory: 'Card',
-              eventAction: 'Download',
-              eventLabel: 'Mantra-Wallpaper1'
+              eventAction: 'Click',
+              eventLabel: 'Mantra-Wallpaper'
             }); "
-               href="HanumanWallpaperDownload3.jpg" download class="template_centre_button mdl-button  mdl-button--colored
+               href="hanuman-chalisa-wallpapers.html" class="template_centre_button mdl-button  mdl-button--colored
                mdl-js-button mdl-js-ripple-effect mdl-button--primary">डाउनलोड </a>
              </div>
          </div>
      </section>
       </div> <!-- MDL GRID -->
  </div> <!-- PAGE CONTENT -->
- <footer class="mdl-mini-footer">
+ <footer class="template-footer mdl-mini-footer">
    <div class="mdl-mini-footer__left-section">
      <div class="mdl-logo">hindudharm.in</div>
      <ul class="mdl-mini-footer__link-list">
